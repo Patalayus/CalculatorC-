@@ -90,8 +90,9 @@ namespace CShapPractise
                 if(useranswer == 1){Console.WriteLine("Please select one from below");
                 Console.WriteLine("Please answer with a number from one of the options.");
                 Console.WriteLine("1. Quadratic Equation");}
-                Console.ReadLine();
-                if (useranswer == 1) { Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("2. Gradient Value");
+                int useranswer2 = Convert.ToInt32(Console.ReadLine());
+                if (useranswer2 == 1) { Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Please enter your B:"); int B = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Please enter your C:"); int C = Convert.ToInt32(Console.ReadLine());
                     //The quadratic formula is used to calculate a positive and negative 'x'
@@ -115,7 +116,30 @@ namespace CShapPractise
                     Console.WriteLine();
                     Console.Write("Your negative x is: " + bottom2);
                     Console.ReadKey();
-                } else if (useranswer==2) { Console.WriteLine();Console.ReadLine(); }
+
+                } else if (useranswer2==2) { Console.Write("Please enter your first Y:"); Console.WriteLine(); float y2 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Please enter your second Y: ");
+                    Console.WriteLine();
+                    float y22 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Please enter your first X: ");
+                    Console.WriteLine();
+                    float x2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Please enter your secondary X:");
+                    Console.WriteLine();
+                    float x22 = Convert.ToInt32(Console.ReadLine());
+                    Console.ReadKey();
+                    //Gradient = Change in Y /  Change in X
+
+                    float diffy = y2 - y22;
+                    float diffx = x2 - x22;
+                    float grad = diffy / diffx;
+
+                    Console.WriteLine(grad);
+                    Console.ReadKey();
+
+
+                        
+                }
             }
             }
         }
