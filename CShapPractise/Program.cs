@@ -26,6 +26,7 @@ namespace CShapPractise
             int x = Convert.ToInt32(Console.ReadLine());
                     //acceptance of second number
 
+            start:
             Console.WriteLine("What do you wish to do to these numbers?");
                 Console.WriteLine("1. Add Them");
                     Console.WriteLine("2. Minus Them");
@@ -87,12 +88,19 @@ namespace CShapPractise
                 /// this is a section of code responsible for the validation of the program
                 /// and the suggestion of doing a different calculation
                 int useranswer = Convert.ToInt32(Console.ReadLine());
-                if(useranswer == 1){Console.WriteLine("Please select one from below");
-                Console.WriteLine("Please answer with a number from one of the options.");
-                Console.WriteLine("1. Quadratic Equation");}
+                if (useranswer == 1) { Console.WriteLine("Please select one from below");
+                    Console.WriteLine("Please answer with a number from one of the options.");
+                    Console.WriteLine("1. Quadratic Equation"); }
+                else if (useranswer == 2){
+                    goto start;
+                }
                 Console.WriteLine("2. Gradient Value");
+                Console.WriteLine("3. Circumference");
+                Console.WriteLine("4. Area of a Circle");
                 int useranswer2 = Convert.ToInt32(Console.ReadLine());
-                if (useranswer2 == 1) { Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
+                if (useranswer2 == 1)
+                {
+                    Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Please enter your B:"); int B = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Please enter your C:"); int C = Convert.ToInt32(Console.ReadLine());
                     //The quadratic formula is used to calculate a positive and negative 'x'
@@ -117,15 +125,14 @@ namespace CShapPractise
                     Console.Write("Your negative x is: " + bottom2);
                     Console.ReadKey();
 
-                } else if (useranswer2==2) { Console.Write("Please enter your first Y:"); Console.WriteLine(); float y2 = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("Please enter your second Y: ");
-                    Console.WriteLine();
+                }
+                else if (useranswer2 == 2)
+                {
+                    Console.Write("Please enter your first Y:"); Console.WriteLine(); float y2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Please enter your second Y: "); Console.WriteLine();
                     float y22 = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Please enter your first X: ");
-                    Console.WriteLine();
-                    float x2 = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Please enter your secondary X:");
-                    Console.WriteLine();
+                    Console.Write("Please enter your first X: "); Console.WriteLine(); float x2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Please enter your secondary X:"); Console.WriteLine();
                     float x22 = Convert.ToInt32(Console.ReadLine());
                     Console.ReadKey();
                     //Gradient = Change in Y /  Change in X
@@ -135,10 +142,22 @@ namespace CShapPractise
                     float grad = diffy / diffx;
 
                     Console.WriteLine(grad);
+                    Console.ReadLine();
+                }
+                else if (useranswer2 == 3)
+                {
+                    Console.WriteLine("Please enter your radius in meters"); float radius1 = Convert.ToInt32(Console.ReadLine());
+                    //the formula for the circumference  = 2x3.141592654xr
+                    float circum = Convert.ToInt32(2 * 3.141592654 * radius1);
+                    Console.WriteLine("Your radius is " + circum+" m");
                     Console.ReadKey();
+                }
+                else if (useranswer2 == 4) { Console.WriteLine("Please enter your radius in meters"); float radius2 = Convert.ToInt32(Console.ReadLine());
+                    // the formula for the area of a circle = 3.141592654xr^2
+                    float squaredradius = Convert.ToInt32(radius2 * radius2);
+                    float area = Convert.ToInt32(3.141592654*squaredradius);
+                    Console.WriteLine("Your area is " + radius2 + " m^2");Console.ReadLine();
 
-
-                        
                 }
             }
             }
