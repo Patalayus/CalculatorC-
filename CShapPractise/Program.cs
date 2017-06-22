@@ -31,7 +31,7 @@ namespace CShapPractise
             Console.WriteLine("8. Find square root of a number");
             Console.WriteLine("9. Add percentage to something");
             Console.WriteLine("10. Work out a percentage of something");
-            Console.WriteLine("Press any key for advanced features.");
+            Console.WriteLine("\nPress any key for advanced features.");
             string userresponce3 = Console.ReadLine();
             if (userresponce3 == "1")
             {
@@ -46,9 +46,8 @@ namespace CShapPractise
                 int total = x + y;
                 Console.Write(total);
                 Console.ReadKey();
-
-
                 //prints added numbers
+
             }
             else if (userresponce3 == "2")
             {
@@ -160,7 +159,29 @@ namespace CShapPractise
                     Console.ReadKey();
                 }
             }
-           
+                if (userresponce3 == "10")
+                {
+                    //works to calculate percentage of a number
+                    Console.WriteLine("You have selected to work out the percentage of something");
+                    Console.WriteLine("Please list the number you want to work out the percentage from"); float number2 = Convert.ToInt64(Console.ReadLine());
+                    Console.WriteLine("Please select the percentage you want to use\n1. 25%\n2. 50%\n3. 75%"); float percentage2 = Convert.ToInt64(Console.ReadLine());
+
+                    if (percentage2 == 1)
+                    {
+                        Console.WriteLine("25% of " + number2 + " is " + number2 * 0.25);
+                        Console.ReadKey();
+                    }
+                    else if (percentage2 == 2)
+                    {
+                        Console.WriteLine("50% of " + number2 + " is " + number2 * 0.50);
+                        Console.ReadKey();
+                    }
+                    else if (percentage2 == 3)
+                    {
+                        Console.WriteLine("75% of " + number2 + " is " + number2 * 0.75);
+                        Console.ReadKey();
+                    }
+                }
                 else
                 {
                     Console.WriteLine("Do you wish to do a different calculation?");
@@ -355,5 +376,6 @@ namespace CShapPractise
             }
         }
     }
+
 
 
