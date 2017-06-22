@@ -18,14 +18,7 @@ namespace CShapPractise
         static void Main(string[] args)
             
         {  
-            Console.WriteLine("Please enter the first number for the calculation");
-            int y = Convert.ToInt32(Console.ReadLine());
-                    //acceptance of first number
-
-            Console.WriteLine("Please write the second number for the calculation");
-            int x = Convert.ToInt32(Console.ReadLine());
-                    //acceptance of second number
-
+            
             start:
             Console.WriteLine("What do you wish to do?");
                 Console.WriteLine("1. Add");
@@ -35,9 +28,16 @@ namespace CShapPractise
                                  Console.WriteLine("5. Mod");
             Console.WriteLine("Press any key for advanced features.");
                          string userresponce3 = Console.ReadLine();
-
+            
             if (userresponce3 == "1")
             {
+                Console.WriteLine("Please enter the first number for the calculation");
+                int y = Convert.ToInt32(Console.ReadLine());
+                //acceptance of first number
+
+                Console.WriteLine("Please write the second number for the calculation");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //acceptance of second number
                 Console.Write("The numbers added together are: ");
                 int total = x + y;
                 Console.Write(total);
@@ -48,6 +48,13 @@ namespace CShapPractise
             }
             else if (userresponce3 == "2")
             {
+                Console.WriteLine("Please enter the first number for the calculation");
+                int y = Convert.ToInt32(Console.ReadLine());
+                //acceptance of first number
+
+                Console.WriteLine("Please write the second number for the calculation");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //acceptance of second number
                 Console.Write("The numbers minused together are: ");
                 int total2 = y - x;
                 Console.Write(total2);
@@ -56,6 +63,13 @@ namespace CShapPractise
             }
             else if (userresponce3 == "3")
             {
+                Console.WriteLine("Please enter the first number for the calculation");
+                int y = Convert.ToInt32(Console.ReadLine());
+                //acceptance of first number
+
+                Console.WriteLine("Please write the second number for the calculation");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //acceptance of second number
                 Console.Write("The numbers multiplied together are: ");
                 int total3 = y * x;
                 Console.Write(total3);
@@ -64,6 +78,13 @@ namespace CShapPractise
             }
             else if (userresponce3 == "4")
             {
+                Console.WriteLine("Please enter the first number for the calculation");
+                int y = Convert.ToInt32(Console.ReadLine());
+                //acceptance of first number
+
+                Console.WriteLine("Please write the second number for the calculation");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //acceptance of second number
                 Console.Write("The numbers divided together are: ");
                 int total4 = y / x;
                 Console.Write(total4);
@@ -72,6 +93,13 @@ namespace CShapPractise
             }
             else if (userresponce3 == "5")
             {
+                Console.WriteLine("Please enter the first number for the calculation");
+                int y = Convert.ToInt32(Console.ReadLine());
+                //acceptance of first number
+
+                Console.WriteLine("Please write the second number for the calculation");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //acceptance of second number
                 Console.Write("The numbers modded together are: ");
                 int total5 = y % x;
                 Console.Write(total5);
@@ -112,7 +140,6 @@ namespace CShapPractise
                     float totalsquareroot = Convert.ToInt32(Math.Sqrt(squareroot));
                     float top = -B + totalsquareroot;
                     float bottom = top / twotimesA;
-
 
                     //int totalquadratic = Convert.ToInt32(-B + Math.Sqrt((B * B) - 4 * (A * C))/2*A);
                     //Console.WriteLine("Your positive x is: "+ totalquadratic);
@@ -172,7 +199,7 @@ namespace CShapPractise
                     float constant7= Convert.ToInt64(Math.Pow(constant, 7));
                     float constant9 = Convert.ToInt64(Math.Pow(constant, 9));
                     float constant11 = Convert.ToInt64(Math.Pow(constant, 11));
-                    float division =-constant;
+                   // float division =-constant;
 
                     int i,i2,i3,i4,i5, number,number22,number3,number4,number5, fact,fact2,facto3,fact4,fact5;
                     string three = Convert.ToString(3);
@@ -214,8 +241,6 @@ namespace CShapPractise
                     }
                     float factorial5 = fact5;
                     
-                    //
-
                     Console.Write("sin x = "+constant);
                     Console.Write("-" + constant + "^3/3!");
                     Console.Write("+" + constant + "^5/5!");
