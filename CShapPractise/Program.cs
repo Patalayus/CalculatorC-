@@ -258,11 +258,13 @@ namespace CShapPractise
                     //prints out more advanced summary
 
                     Console.WriteLine("\n");
-                    float fini = constant - constant3 / factorial1 + constant5 / factorial2 - constant7 / factorial3 + constant9 / factorial4 - constant11 / factorial5;
-                    Console.Write("Sin(" + constant + ")="+fini);
+                    float fini  = constant - constant3 / factorial1 + constant5 / factorial2 - constant7 / factorial3 + constant9 / factorial4 - constant11 / factorial5;
+                    Console.WriteLine(fini - 0.05);
+                    Console.Write("Sin(" + constant + ")="+ fini);
                     Console.Write(fini);
                     Console.ReadKey();
                     //prints out calculation
+                
                 }
                
             }
