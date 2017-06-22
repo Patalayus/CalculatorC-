@@ -88,6 +88,7 @@ namespace CShapPractise
                 /// this is a section of code responsible for the validation of the program
                 /// and the suggestion of doing a different calculation
                 int useranswer = Convert.ToInt32(Console.ReadLine());
+
                 if (useranswer == 1) { Console.WriteLine("Please select one from below");
                     Console.WriteLine("Please answer with a number from one of the options.");
                     Console.WriteLine("1. Quadratic Equation"); }
@@ -97,6 +98,7 @@ namespace CShapPractise
                 Console.WriteLine("2. Gradient Value");
                 Console.WriteLine("3. Circumference");
                 Console.WriteLine("4. Area of a Circle");
+                Console.WriteLine("5. Differentiation of sin(x)");
                 int useranswer2 = Convert.ToInt32(Console.ReadLine());
                 if (useranswer2 == 1)
                 {
@@ -149,16 +151,102 @@ namespace CShapPractise
                     Console.WriteLine("Please enter your radius in meters"); float radius1 = Convert.ToInt32(Console.ReadLine());
                     //the formula for the circumference  = 2x3.141592654xr
                     float circum = Convert.ToInt32(2 * 3.141592654 * radius1);
-                    Console.WriteLine("Your radius is " + circum+" m");
+                    Console.WriteLine("Your radius is " + circum + " m");
                     Console.ReadKey();
                 }
-                else if (useranswer2 == 4) { Console.WriteLine("Please enter your radius in meters"); float radius2 = Convert.ToInt32(Console.ReadLine());
+                else if (useranswer2 == 4)
+                {
+                    Console.WriteLine("Please enter your radius in meters"); float radius2 = Convert.ToInt32(Console.ReadLine());
                     // the formula for the area of a circle = 3.141592654xr^2
                     float squaredradius = Convert.ToInt32(radius2 * radius2);
-                    float area = Convert.ToInt32(3.141592654*squaredradius);
-                    Console.WriteLine("Your area is " + radius2 + " m^2");Console.ReadLine();
+                    float area = Convert.ToInt32(3.141592654 * squaredradius);
+                    Console.WriteLine("Your area is " + radius2 + " m^2"); Console.ReadLine();
 
                 }
+                else if (useranswer2 == 5) { Console.WriteLine("Please define your constant ");float constant = Convert.ToInt64(Console.ReadLine());
+                    ///this is the differentiation of sin(x)#
+                    ///y = AsinX
+                    ///dy/dx = AcosX
+                    ///sin x = x - x^3/3! + x^5/5! - x^7/7! + x^9/9! - x^11/11!
+                    ///
+
+                    float constant3 = Convert.ToInt32(Math.Pow(constant,3));
+                    float constant5 = Convert.ToInt32(Math.Pow(constant, 5));
+                    float constant7= Convert.ToInt64(Math.Pow(constant, 7));
+                    float constant9 = Convert.ToInt64(Math.Pow(constant, 9));
+                    float constant11 = Convert.ToInt64(Math.Pow(constant, 11));
+                    float division =-constant;
+
+                    int i, number, fact;
+                    string three = Convert.ToString(3);
+                    number = int.Parse(three);
+                    fact = number;
+                    for (i = number - 1; i >= 1; i--)
+                    {
+                        fact = fact * i;
+                    }                   
+                    float factorial1 = fact;
+                    //
+                    int i2, number22, fact2;
+                    string five = Convert.ToString(5);
+                    number22 = int.Parse(five);
+                    fact2 = number22;
+                    for (i2 = number22 - 1; i2 >= 1; i2--)
+                    {
+                        fact2 = fact2 * i2;
+                    }
+                    float factorial2 = fact2;
+                    //
+                    int i3, number3, facto3;
+                    string seven = Convert.ToString(7);
+                    number3 = int.Parse(seven);
+                    facto3 = number3;
+                    for (i3 = number3 - 1; i3 >= 1; i3--)
+                    {
+                        facto3 = facto3 * i3;
+                    }
+                    float factorial3 = facto3;
+                    //
+                    int i4, number4, fact4;
+                    string nine  = Convert.ToString(9);
+                    number4 = int.Parse(nine);
+                    fact4 = number4;
+                    for (i4 = number - 1; i4 >= 1; i4--)
+                    {
+                        fact4 = fact4 * i4;
+                    }
+                    float factorial4 = fact4;
+                    //
+                    int i5, number5, fact5;
+                    string  eleven = Convert.ToString(11);
+                    number5 = int.Parse(eleven);
+                    fact5 = number5;
+                    for (i5 = number5 - 1; i5 >= 1; i5--)
+                    {
+                        fact5 = fact5 * i5;
+                    }
+                    float factorial5 = fact5;
+                    //
+
+                    Console.Write("sin x = "+constant);
+                    Console.Write("-" + constant + "^3/3!");
+                    Console.Write("+" + constant + "^5/5!");
+                    Console.Write("-" + constant + "^7/7!");
+                    Console.Write("+" + constant + "^9/9!");
+                    Console.Write("-" + constant + "^11/11!");
+                    Console.WriteLine("\n");
+                    Console.Write("This is equal to sin x = x-" + constant3 +"/"+ factorial1);
+                    Console.Write("+" + constant5 + "/" + factorial2);
+                    Console.Write("-" + constant7 + "/" + factorial3);
+                    Console.Write("+" + constant9 + "/" + factorial4);
+                    Console.Write("-" + constant11 + "/" + factorial5);
+                    Console.WriteLine("\n");
+                    float fini = constant - constant3 / factorial1 + constant5 / factorial2 - constant7 / factorial3 + constant9 / factorial4 - constant11 / factorial5;
+                    Console.Write("Sin(" + constant + ")="+fini);
+                    Console.Write(fini);
+                    Console.ReadKey();
+                }
+               
             }
             }
         }
