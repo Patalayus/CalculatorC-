@@ -121,9 +121,11 @@ namespace CShapPractise
                     goto start;
                 }
                 Console.WriteLine("2. Gradient Value");
-                Console.WriteLine("3. Circumference");
-                Console.WriteLine("4. Area of a Circle");
-                Console.WriteLine("5. Differentiation of sin(x)");
+                    Console.WriteLine("3. Circumference");
+                        Console.WriteLine("4. Area of a Circle");
+                            Console.WriteLine("5. Differentiation of sin(x)");
+                                Console.WriteLine("6. Momentum of an object");
+                                    Console.WriteLine("7. Voltage");
                 int useranswer2 = Convert.ToInt32(Console.ReadLine());
                 if (useranswer2 == 1)
                 {
@@ -187,21 +189,23 @@ namespace CShapPractise
                     Console.WriteLine("Your area is " + radius2 + " m^2"); Console.ReadLine();
 
                 }
-                else if (useranswer2 == 5) { Console.WriteLine("Please define your constant ");float constant = Convert.ToInt64(Console.ReadLine());
+                else if (useranswer2 == 5)
+                {
+                    Console.WriteLine("Please define your constant "); float constant = Convert.ToInt64(Console.ReadLine());
                     ///this is the differentiation of sin(x)#
                     ///y = AsinX
                     ///dy/dx = AcosX
                     ///sin x = x - x^3/3! + x^5/5! - x^7/7! + x^9/9! - x^11/11!
                     ///
 
-                    float constant3 = Convert.ToInt64(Math.Pow(constant,3));
+                    float constant3 = Convert.ToInt64(Math.Pow(constant, 3));
                     float constant5 = Convert.ToInt64(Math.Pow(constant, 5));
-                    float constant7= Convert.ToInt64(Math.Pow(constant, 7));
+                    float constant7 = Convert.ToInt64(Math.Pow(constant, 7));
                     float constant9 = Convert.ToInt64(Math.Pow(constant, 9));
                     float constant11 = Convert.ToInt64(Math.Pow(constant, 11));
-                   // float division =-constant;
+                    // float division =-constant;
 
-                    int i,i2,i3,i4,i5, number,number22,number3,number4,number5, fact,fact2,facto3,fact4,fact5;
+                    int i, i2, i3, i4, i5, number, number22, number3, number4, number5, fact, fact2, facto3, fact4, fact5;
                     string three = Convert.ToString(3);
                     string five = Convert.ToString(5);
                     string seven = Convert.ToString(7);
@@ -218,7 +222,7 @@ namespace CShapPractise
                     for (i = number - 1; i >= 1; i--)
                     {
                         fact = fact * i;
-                    }                   
+                    }
                     float factorial1 = fact;
                     for (i2 = number22 - 1; i2 >= 1; i2--)
                     {
@@ -240,8 +244,8 @@ namespace CShapPractise
                         fact5 = fact5 * i5;
                     }
                     float factorial5 = fact5;
-                    
-                    Console.Write("sin x = "+constant);
+
+                    Console.Write("sin x = " + constant);
                     Console.Write("-" + constant + "^3/3!");
                     Console.Write("+" + constant + "^5/5!");
                     Console.Write("-" + constant + "^7/7!");
@@ -250,7 +254,7 @@ namespace CShapPractise
                     //prints out summary
 
                     Console.WriteLine("\n");
-                    Console.Write("This is equal to sin x = x-" + constant3 +"/"+ factorial1);
+                    Console.Write("This is equal to sin x = x-" + constant3 + "/" + factorial1);
                     Console.Write("+" + constant5 + "/" + factorial2);
                     Console.Write("-" + constant7 + "/" + factorial3);
                     Console.Write("+" + constant9 + "/" + factorial4);
@@ -258,14 +262,35 @@ namespace CShapPractise
                     //prints out more advanced summary
 
                     Console.WriteLine("\n");
-                    float fini  = constant - constant3 / factorial1 + constant5 / factorial2 - constant7 / factorial3 + constant9 / factorial4 - constant11 / factorial5;
+                    float fini = constant - constant3 / factorial1 + constant5 / factorial2 - constant7 / factorial3 + constant9 / factorial4 - constant11 / factorial5;
                     Console.WriteLine(fini - 0.05);
-                    Console.Write("Sin(" + constant + ")="+ fini);
+                    Console.Write("Sin(" + constant + ")=" + fini);
                     Console.Write(fini);
                     Console.ReadKey();
                     //prints out calculation
-                
                 }
+                else if (useranswer == 6)
+                {
+                    Console.WriteLine("Please enter your mass");
+                    float M = Convert.ToInt64(Console.ReadLine());
+                    Console.WriteLine("Please enter your velocity");
+                    float V = Convert.ToInt64(Console.ReadLine());
+                    float P = M * V;
+                    Console.WriteLine("Your momentum is" + P);
+                    Console.ReadKey();
+                    //prints out momentum of object
+                }
+                else if (useranswer == 7) {
+                    Console.WriteLine("Please enter your current in amps");
+                    float I = Convert.ToInt64(Console.ReadLine());
+                    Console.WriteLine("Please enter your resistance in ohms");
+                    float R = Convert.ToInt64(Console.ReadLine());
+                    float V = I * R;
+                    Console.WriteLine("Your voltage is " + V+"V");
+                    Console.ReadKey();
+                    //prints out voltage
+                }
+
                
             }
             }
