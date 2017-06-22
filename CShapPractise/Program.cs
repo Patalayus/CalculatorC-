@@ -16,19 +16,21 @@ namespace CShapPractise
         }
 
         static void Main(string[] args)
-            
-        {  
-            
+
+        {
+
             start:
             Console.WriteLine("What do you wish to do?");
-                Console.WriteLine("1. Add");
-                    Console.WriteLine("2. Minus");
-                        Console.WriteLine("3. Multiply");
-                            Console.WriteLine("4. Divide");
-                                 Console.WriteLine("5. Mod");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Minus");
+            Console.WriteLine("3. Multiply");
+            Console.WriteLine("4. Divide");
+            Console.WriteLine("5. Mod");
+            Console.WriteLine("6. Square a number");
+            Console.WriteLine("7. Cube a number");
+            Console.WriteLine("8. Find square root of a number");
             Console.WriteLine("Press any key for advanced features.");
-                         string userresponce3 = Console.ReadLine();
-            
+            string userresponce3 = Console.ReadLine();
             if (userresponce3 == "1")
             {
                 Console.WriteLine("Please enter the first number for the calculation");
@@ -42,7 +44,7 @@ namespace CShapPractise
                 int total = x + y;
                 Console.Write(total);
                 Console.ReadKey();
-                
+
 
                 //prints added numbers
             }
@@ -106,7 +108,34 @@ namespace CShapPractise
                 Console.ReadKey();
                 //prints numbers modded together
             }
-            else{
+            else if (userresponce3 == "6")
+            {
+                Console.WriteLine("Please enter the number you want to square");
+                float squarevalue = Convert.ToInt64(Console.ReadLine());
+                float squaretotalvalue = squarevalue * squarevalue;
+                Console.WriteLine(squaretotalvalue);
+                Console.ReadKey();
+                //prints square of a number
+            }
+            else if (userresponce3 == "7")
+            {
+                Console.WriteLine("Please enter the number you want to cube");
+                float cubenumber = Convert.ToInt64(Console.ReadLine());
+                float cubetotal = cubenumber * cubenumber * cubenumber;
+                Console.WriteLine(cubetotal);
+                Console.ReadKey();
+                //prints cube of a number
+            }
+            else if (userresponce3 == "8")
+            {
+                Console.WriteLine("Please select number "); Double squareroot = Convert.ToInt64(Console.ReadLine());
+                double totalsquareroot = Math.Sqrt(squareroot);
+                Console.WriteLine("Your square root is " + totalsquareroot);
+                Console.ReadKey();
+                //the square root of a number
+            }
+            else
+            {
                 Console.WriteLine("Do you wish to do a different calculation?");
                 Console.WriteLine("1. Yes");
                 Console.WriteLine("2. No");
@@ -114,18 +143,22 @@ namespace CShapPractise
                 /// and the suggestion of doing a different calculation
                 int useranswer = Convert.ToInt32(Console.ReadLine());
 
-                if (useranswer == 1) { Console.WriteLine("Please select one from below");
+                if (useranswer == 1)
+                {
+                    Console.WriteLine("Please select one from below");
                     Console.WriteLine("Please answer with a number from one of the options.");
-                    Console.WriteLine("1. Quadratic Equation"); }
-                else if (useranswer == 2){
+                    Console.WriteLine("1. Quadratic Equation");
+                }
+                else if (useranswer == 2)
+                {
                     goto start;
                 }
                 Console.WriteLine("2. Gradient Value");
-                    Console.WriteLine("3. Circumference");
-                        Console.WriteLine("4. Area of a Circle");
-                            Console.WriteLine("5. Differentiation of sin(x)");
-                                Console.WriteLine("6. Momentum of an object");
-                                    Console.WriteLine("7. Voltage");
+                Console.WriteLine("3. Circumference");
+                Console.WriteLine("4. Area of a Circle");
+                Console.WriteLine("5. Differentiation of sin(x)");
+                Console.WriteLine("6. Momentum of an object");
+                Console.WriteLine("7. Voltage");
                 int useranswer2 = Convert.ToInt32(Console.ReadLine());
                 if (useranswer2 == 1)
                 {
@@ -280,18 +313,17 @@ namespace CShapPractise
                     Console.ReadKey();
                     //prints out momentum of object
                 }
-                else if (useranswer == 7) {
+                else if (useranswer == 7)
+                {
                     Console.WriteLine("Please enter your current in amps");
                     float I = Convert.ToInt64(Console.ReadLine());
                     Console.WriteLine("Please enter your resistance in ohms");
                     float R = Convert.ToInt64(Console.ReadLine());
                     float V = I * R;
-                    Console.WriteLine("Your voltage is " + V+"V");
+                    Console.WriteLine("Your voltage is " + V + "V");
                     Console.ReadKey();
                     //prints out voltage
                 }
-
-               
             }
             }
         }
