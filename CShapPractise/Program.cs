@@ -159,56 +159,51 @@ namespace CShapPractise
                     Console.ReadKey();
                 }
             }
-                if (userresponce3 == "10")
-                {
-                    //works to calculate percentage of a number
-                    Console.WriteLine("You have selected to work out the percentage of something");
-                    Console.WriteLine("Please list the number you want to work out the percentage from"); float number2 = Convert.ToInt64(Console.ReadLine());
-                    Console.WriteLine("Please select the percentage you want to use\n1. 25%\n2. 50%\n3. 75%"); float percentage2 = Convert.ToInt64(Console.ReadLine());
+            if (userresponce3 == "10")
+            {
+                //works to calculate percentage of a number
+                Console.WriteLine("You have selected to work out the percentage of something");
+                Console.WriteLine("Please list the number you want to work out the percentage from"); float number2 = Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("Please select the percentage you want to use\n1. 25%\n2. 50%\n3. 75%"); float percentage2 = Convert.ToInt64(Console.ReadLine());
 
-                    if (percentage2 == 1)
-                    {
-                        Console.WriteLine("25% of " + number2 + " is " + number2 * 0.25);
-                        Console.ReadKey();
-                    }
-                    else if (percentage2 == 2)
-                    {
-                        Console.WriteLine("50% of " + number2 + " is " + number2 * 0.50);
-                        Console.ReadKey();
-                    }
-                    else if (percentage2 == 3)
-                    {
-                        Console.WriteLine("75% of " + number2 + " is " + number2 * 0.75);
-                        Console.ReadKey();
-                    }
+                if (percentage2 == 1)
+                {
+                    Console.WriteLine("25% of " + number2 + " is " + number2 * 0.25);
+                    Console.ReadKey();
                 }
-                else
+                else if (percentage2 == 2)
                 {
-                    Console.WriteLine("Do you wish to do a different calculation?");
-                    Console.WriteLine("1. Yes");
-                    Console.WriteLine("2. No");
-                    /// this is a section of code responsible for the validation of the program
-                    /// and the suggestion of doing a different calculation
-                    int useranswer = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("50% of " + number2 + " is " + number2 * 0.50);
+                    Console.ReadKey();
+                }
+                else if (percentage2 == 3)
+                {
+                    Console.WriteLine("75% of " + number2 + " is " + number2 * 0.75);
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Do you wish to do a different calculation?");
+                Console.WriteLine("1. Yes");
+                Console.WriteLine("2. No");
+                /// this is a section of code responsible for the validation of the program
+                /// and the suggestion of doing a different calculation
+                int useranswer2 = Convert.ToInt32(Console.ReadLine());
+                if (useranswer2 == 1)
+                {
 
-                    if (useranswer == 1)
-                    {
-                        Console.WriteLine("Please select one from below");
-                        Console.WriteLine("Please answer with a number from one of the options.");
-                        Console.WriteLine("1. Quadratic Equation");
-                    }
-                    else if (useranswer == 2)
-                    {
-                        goto start;
-                    }
+                    Console.WriteLine("Please select one from below");
+                    Console.WriteLine("Please answer with a number from one of the options.");
+                    Console.WriteLine("1. Quadratic Equation");
                     Console.WriteLine("2. Gradient Value");
                     Console.WriteLine("3. Circumference");
                     Console.WriteLine("4. Area of a Circle");
                     Console.WriteLine("5. Differentiation of sin(x)");
                     Console.WriteLine("6. Momentum of an object");
                     Console.WriteLine("7. Voltage");
-                    int useranswer2 = Convert.ToInt32(Console.ReadLine());
-                    if (useranswer2 == 1)
+                    float useranswer3 = Convert.ToInt32(Console.ReadLine());
+                    if (useranswer3 == 1)
                     {
                         Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Please enter your B:"); int B = Convert.ToInt32(Console.ReadLine());
@@ -235,7 +230,7 @@ namespace CShapPractise
                         Console.ReadKey();
 
                     }
-                    else if (useranswer2 == 2)
+                    else if (useranswer3 == 2)
                     {
                         Console.Write("Please enter your first Y:"); Console.WriteLine(); float y2 = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Please enter your second Y: "); Console.WriteLine();
@@ -253,7 +248,7 @@ namespace CShapPractise
                         Console.WriteLine(grad);
                         Console.ReadLine();
                     }
-                    else if (useranswer2 == 3)
+                    else if (useranswer3 == 3)
                     {
                         Console.WriteLine("Please enter your radius in meters"); float radius1 = Convert.ToInt32(Console.ReadLine());
                         //the formula for the circumference  = 2x3.141592654xr
@@ -261,7 +256,7 @@ namespace CShapPractise
                         Console.WriteLine("Your radius is " + circum + " m");
                         Console.ReadKey();
                     }
-                    else if (useranswer2 == 4)
+                    else if (useranswer3 == 4)
                     {
                         Console.WriteLine("Please enter your radius in meters"); float radius2 = Convert.ToInt32(Console.ReadLine());
                         // the formula for the area of a circle = 3.141592654xr^2
@@ -270,7 +265,7 @@ namespace CShapPractise
                         Console.WriteLine("Your area is " + radius2 + " m^2"); Console.ReadLine();
 
                     }
-                    else if (useranswer2 == 5)
+                    else if (useranswer3 == 5)
                     {
                         Console.WriteLine("Please define your constant "); float constant = Convert.ToInt64(Console.ReadLine());
                         ///this is the differentiation of sin(x)#
@@ -350,18 +345,18 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out calculation
                     }
-                    else if (useranswer == 6)
+                    else if (useranswer3 == 6)
                     {
                         Console.WriteLine("Please enter your mass");
                         float M = Convert.ToInt64(Console.ReadLine());
                         Console.WriteLine("Please enter your velocity");
                         float V = Convert.ToInt64(Console.ReadLine());
                         float P = M * V;
-                        Console.WriteLine("Your momentum is" + P);
+                        Console.WriteLine("Your momentum is " + P);
                         Console.ReadKey();
                         //prints out momentum of object
                     }
-                    else if (useranswer == 7)
+                    else if (useranswer3 == 7)
                     {
                         Console.WriteLine("Please enter your current in amps");
                         float I = Convert.ToInt64(Console.ReadLine());
@@ -372,10 +367,15 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out voltage
                     }
+                    else {
+                        goto start;
+                    }
+                    }
                 }
             }
         }
     }
+
 
 
 
