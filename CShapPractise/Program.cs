@@ -31,6 +31,7 @@ namespace CShapPractise
             Console.WriteLine("8. Find square root of a number");
             Console.WriteLine("9. Add percentage to something");
             Console.WriteLine("10. Work out a percentage of something");
+            
             Console.WriteLine("\nPress any key for advanced features.");
             string userresponce3 = Console.ReadLine();
             if (userresponce3 == "1")
@@ -202,6 +203,7 @@ namespace CShapPractise
                     Console.WriteLine("5. Differentiation of sin(x)");
                     Console.WriteLine("6. Momentum of an object");
                     Console.WriteLine("7. Voltage");
+                    Console.WriteLine("8. Volume of a Cylinder.");
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
                     if (useranswer3 == 1)
                     {
@@ -366,6 +368,36 @@ namespace CShapPractise
                         Console.WriteLine("Your voltage is " + V + "V");
                         Console.ReadKey();
                         //prints out voltage
+                    }
+                    else if (useranswer3 == 8) {
+                        Console.WriteLine("You have chosen to work out the volume of a cylinder.");
+                        Console.WriteLine("Do you have an area or a radius?");
+                        Console.WriteLine("1. Area of a Circle");
+                        Console.WriteLine("2. Radius of a Circle");
+                        int CorR = Convert.ToInt32(Console.ReadLine());
+                        if (CorR == 1)
+                        {
+                            Console.WriteLine("You have chosen an area. Please write your area.");
+                            float areaofacircle = Convert.ToInt64(Console.ReadLine());
+                            Console.WriteLine("Please write your length.");
+                            float lengthofacircle = Convert.ToInt64(Console.ReadLine());
+                            float qwer = areaofacircle * lengthofacircle;
+                            Console.WriteLine("Your cylinder's volume is " + qwer+"m^3");
+                            Console.ReadKey();
+                        }
+                        else if (CorR == 2) {
+                            Console.WriteLine("You have chosen a radius. Please write your radius.");
+                            float radiusofacircle = Convert.ToInt64(Console.ReadLine());
+                            float radtimesrad = radiusofacircle * radiusofacircle;
+                            float areaofacircle2 = Convert.ToInt32(3.141592654 * radtimesrad);
+                            Console.WriteLine("Your area is "+areaofacircle2);
+                            Console.WriteLine("Please write your length");
+                            float circlelength = Convert.ToInt64(Console.ReadLine());
+                            float total_ = areaofacircle2 * circlelength;
+                            Console.WriteLine("Your volume is " + total_+"m^3");
+                            Console.ReadKey();
+
+                        }
                     }
                     else {
                         goto start;
