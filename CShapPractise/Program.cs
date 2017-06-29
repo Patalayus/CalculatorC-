@@ -375,6 +375,7 @@ namespace CShapPractise
                         Console.WriteLine("1. Area of a Circle");
                         Console.WriteLine("2. Radius of a Circle");
                         int CorR = Convert.ToInt32(Console.ReadLine());
+                        //checks user for area or radius
                         if (CorR == 1)
                         {
                             Console.WriteLine("You have chosen an area. Please write your area.");
@@ -384,6 +385,7 @@ namespace CShapPractise
                             float qwer = areaofacircle * lengthofacircle;
                             Console.WriteLine("Your cylinder's volume is " + qwer+"m^3");
                             Console.ReadKey();
+                            //works out volume from area
                         }
                         else if (CorR == 2) {
                             Console.WriteLine("You have chosen a radius. Please write your radius.");
@@ -396,7 +398,7 @@ namespace CShapPractise
                             float total_ = areaofacircle2 * circlelength;
                             Console.WriteLine("Your volume is " + total_+"m^3");
                             Console.ReadKey();
-
+                            //works out volume from radius
                         }
                     }
                     else {
