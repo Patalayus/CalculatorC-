@@ -31,8 +31,10 @@ namespace CShapPractise
             Console.WriteLine("8. Find square root of a number");
             Console.WriteLine("9. Add percentage to something");
             Console.WriteLine("10. Work out a percentage of something");
-            
+            Console.WriteLine("11. Times a number by 10");
+            Console.WriteLine("12. Divide a number by 10");
             Console.WriteLine("\nPress any key for advanced features.");
+
             string userresponce3 = Console.ReadLine();
             if (userresponce3 == "1")
             {
@@ -182,6 +184,25 @@ namespace CShapPractise
                     Console.WriteLine("75% of " + number2 + " is " + number2 * 0.75);
                     Console.ReadKey();
                 }
+                
+            }
+            if (userresponce3 == "11")
+            {
+                Console.WriteLine("You have chosen to times a number by 10");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                int number1times10 = number1 * 10;
+                Console.WriteLine("Your number is " + number1times10);
+                Console.ReadKey();
+                //multiplies a number by 10
+            }
+            if (userresponce3 == "12")
+            {
+                Console.WriteLine("You have chosen to divide a number by 10");
+                double number2_ = Convert.ToInt32(Console.ReadLine());
+                double number2_dividedby10 = number2_ / 10;
+                Console.WriteLine("Your number is " + number2_dividedby10);
+                Console.ReadKey();
+                //divides a number by 10
             }
             else
             {
@@ -204,6 +225,7 @@ namespace CShapPractise
                     Console.WriteLine("6. Momentum of an object");
                     Console.WriteLine("7. Voltage");
                     Console.WriteLine("8. Volume of a Cylinder.");
+                    
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
                     if (useranswer3 == 1)
                     {
@@ -289,11 +311,13 @@ namespace CShapPractise
                         string seven = Convert.ToString(7);
                         string nine = Convert.ToString(9);
                         string eleven = Convert.ToString(11);
+
                         number = int.Parse(three);
                         number22 = int.Parse(five);
                         number3 = int.Parse(seven);
                         number4 = int.Parse(nine);
                         number5 = int.Parse(eleven);
+
                         fact = number; fact2 = number22;
                         facto3 = number3; fact4 = number4;
                         fact5 = number5;
