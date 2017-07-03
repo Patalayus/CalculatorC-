@@ -208,17 +208,23 @@ namespace CShapPractise
                 Console.ReadKey();
                 //divides a number by 10
             }
+
             if (userresponce3 == "13"){
-            Console.WriteLine("You have chosen to times a number by 100");
+                Console.WriteLine("You have chosen to times a number by 100");
                 Console.WriteLine("Please enter the number you wish to times by 100");
-            int numberentered = Convert.ToInt32(Console.ReadLine());
+                double numberentered = Convert.ToInt32(Console.ReadLine());
+                double numberenteredtotal = numberentered * 100;
+                Console.WriteLine("You're total is " + numberenteredtotal);
+                Console.ReadKey();
             
             }
             if (userresponce3 == "14"){
                 Console.WriteLine("You have chosen to divide a number by 100");
-                Console.WriteLine("Pleas");
-                int numberentered2 = Convert.ToInt32(Console.ReadLine());
-
+                Console.WriteLine("Please enter the number you wish to times by 100");
+                double numberentered2 = Convert.ToInt32(Console.ReadLine());
+                double numberenteredtotal2 = numberentered2 / 100;
+                Console.WriteLine("You're total is "+ numberenteredtotal2);
+                Console.ReadKey();
             }
             else
             {
