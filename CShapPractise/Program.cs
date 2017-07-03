@@ -13,6 +13,8 @@ namespace CShapPractise
         {
             Console.WriteLine("This is the secondary subroutine");
             Console.ReadKey();
+            Console.WriteLine("It literally serves no function to the program whatsoever.");
+            Console.ReadKey();
         }
 
         static void Main(string[] args)
@@ -33,6 +35,8 @@ namespace CShapPractise
             Console.WriteLine("10. Work out a percentage of something");
             Console.WriteLine("11. Times a number by 10");
             Console.WriteLine("12. Divide a number by 10");
+            Console.WriteLine("13. Times a number by 100");
+            Console.WriteLine("14. Divide a number by 100");
             Console.WriteLine("\nPress any key for advanced features.");
 
             string userresponce3 = Console.ReadLine();
@@ -203,6 +207,18 @@ namespace CShapPractise
                 Console.WriteLine("Your number is " + number2_dividedby10);
                 Console.ReadKey();
                 //divides a number by 10
+            }
+            if (userresponce3 == "13"){
+            Console.WriteLine("You have chosen to times a number by 100");
+                Console.WriteLine("Please enter the number you wish to times by 100");
+            int numberentered = Convert.ToInt32(Console.ReadLine());
+            
+            }
+            if (userresponce3 == "14"){
+                Console.WriteLine("You have chosen to divide a number by 100");
+                Console.WriteLine("Pleas");
+                int numberentered2 = Convert.ToInt32(Console.ReadLine());
+
             }
             else
             {
