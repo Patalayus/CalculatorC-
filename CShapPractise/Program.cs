@@ -219,6 +219,7 @@ namespace CShapPractise
                 double numberenteredtotal = numberentered * 100;
                 Console.WriteLine("You're total is " + numberenteredtotal);
                 Console.ReadKey();
+                //times a number by 100
             
             }
             if (userresponce3 == "14"){
@@ -228,6 +229,7 @@ namespace CShapPractise
                 double numberenteredtotal2 = numberentered2 / 100;
                 Console.WriteLine("You're total is "+ numberenteredtotal2);
                 Console.ReadKey();
+                //divide a number by 100
             }
             if (userresponce3 == "15") {
                 Console.WriteLine("You have chosen to times by 1000");
@@ -236,6 +238,7 @@ namespace CShapPractise
                 float firstnumbertotal = firstnumber * 1000;
                 Console.WriteLine("Your total is " + firstnumbertotal);
                 Console.ReadKey();
+                //times a number by 1000
             }
             if (userresponce3 == "16") {
                 Console.WriteLine("You have chosen to divide by 1000");
@@ -244,6 +247,7 @@ namespace CShapPractise
                 float secondnumbertotal = secondnumber / 1000;
                 Console.WriteLine("Your total is " + secondnumbertotal);
                 Console.ReadKey();
+                //divide a number by 1000
 
             }
             else
