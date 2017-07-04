@@ -230,7 +230,12 @@ namespace CShapPractise
                 Console.ReadKey();
             }
             if (userresponce3 == "15") {
-                Console.WriteLine("You have chosen to times by 1000");Console.ReadKey();
+                Console.WriteLine("You have chosen to times by 1000");
+                Console.WriteLine("Please enter the value you want to times by 1000");
+                float firstnumber = Convert.ToInt32(Console.ReadLine());
+                float firstnumbertotal = firstnumber * 1000;
+                Console.WriteLine("Your total is " + firstnumbertotal);
+                Console.ReadKey();
             }
             if (userresponce3 == "16") {
                 Console.WriteLine("You have chosen to divide by 1000"); Console.ReadKey();            }
