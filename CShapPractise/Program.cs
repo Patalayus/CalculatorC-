@@ -229,6 +229,11 @@ namespace CShapPractise
                 Console.WriteLine("You're total is "+ numberenteredtotal2);
                 Console.ReadKey();
             }
+            if (userresponce3 == "15") {
+                Console.WriteLine("You have chosen to times by 1000");Console.ReadKey();
+            }
+            if (userresponce3 == "16") {
+                Console.WriteLine("You have chosen to divide by 1000"); Console.ReadKey();            }
             else
             {
                 Console.WriteLine("Do you wish to do a different calculation?");
@@ -433,7 +438,7 @@ namespace CShapPractise
                             Console.WriteLine("Please write your length.");
                             float lengthofacircle = Convert.ToInt64(Console.ReadLine());
                             float qwer = areaofacircle * lengthofacircle;
-                            Console.WriteLine("Your cylinder's volume is " + qwer+"m^3");
+                            Console.WriteLine("Your cylinder's volume is " + qwer + "m^3");
                             Console.ReadKey();
                             //works out volume from area
                         }
@@ -442,11 +447,11 @@ namespace CShapPractise
                             float radiusofacircle = Convert.ToInt64(Console.ReadLine());
                             float radtimesrad = radiusofacircle * radiusofacircle;
                             float areaofacircle2 = Convert.ToInt32(3.141592654 * radtimesrad);
-                            Console.WriteLine("Your area is "+areaofacircle2);
+                            Console.WriteLine("Your area is " + areaofacircle2);
                             Console.WriteLine("Please write your length");
                             float circlelength = Convert.ToInt64(Console.ReadLine());
                             float total_ = areaofacircle2 * circlelength;
-                            Console.WriteLine("Your volume is " + total_+"m^3");
+                            Console.WriteLine("Your volume is " + total_ + "m^3");
                             Console.ReadKey();
                             //works out volume from radius
                         }
@@ -454,8 +459,8 @@ namespace CShapPractise
                     else {
                         goto start;
                     }
-                    }
                 }
+            }
             }
         }
     }
