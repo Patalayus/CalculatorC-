@@ -238,7 +238,14 @@ namespace CShapPractise
                 Console.ReadKey();
             }
             if (userresponce3 == "16") {
-                Console.WriteLine("You have chosen to divide by 1000"); Console.ReadKey();            }
+                Console.WriteLine("You have chosen to divide by 1000");
+                Console.WriteLine("Please enter the number you wish to divide by 1000");
+                float secondnumber = Convert.ToInt32(Console.ReadLine());
+                float secondnumbertotal = secondnumber / 1000;
+                Console.WriteLine("Your total is " + secondnumbertotal);
+                Console.ReadKey();
+
+            }
             else
             {
                 Console.WriteLine("Do you wish to do a different calculation?");
