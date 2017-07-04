@@ -13,8 +13,7 @@ namespace CShapPractise
         {
             Console.WriteLine("This is the secondary subroutine");
             Console.ReadKey();
-            Console.WriteLine("It literally serves no function to the program whatsoever.");
-            Console.ReadKey();
+            while (true) { Console.WriteLine("You have called the secondary subroutine"); }
         }
 
         static void Main(string[] args)
@@ -239,6 +238,7 @@ namespace CShapPractise
                 Console.WriteLine("Your total is " + firstnumbertotal);
                 Console.ReadKey();
                 //times a number by 1000
+                
             }
             if (userresponce3 == "16") {
                 Console.WriteLine("You have chosen to divide by 1000");
