@@ -37,6 +37,9 @@ namespace CShapPractise
             Console.WriteLine("12. Divide a number by 10");
             Console.WriteLine("13. Times a number by 100");
             Console.WriteLine("14. Divide a number by 100");
+            Console.WriteLine("15. Times a number by 1000");
+            Console.WriteLine("16. Divide a number by 1000");
+            //option menu 1
             Console.WriteLine("\nPress any key for advanced features.");
 
             string userresponce3 = Console.ReadLine();
@@ -247,7 +250,8 @@ namespace CShapPractise
                     Console.WriteLine("6. Momentum of an object");
                     Console.WriteLine("7. Voltage");
                     Console.WriteLine("8. Volume of a Cylinder.");
-                    
+                    //option menu 2
+
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
                     if (useranswer3 == 1)
                     {
