@@ -197,26 +197,72 @@ namespace CShapPractise
                 Console.WriteLine("3. 1000");
 
                 int numberchoice = Convert.ToInt32(Console.ReadLine());
+                
                 if (numberchoice == 1) {
                     Console.WriteLine("You have chosen the number 10");
                     Console.WriteLine("Do you wish to times or divide your number by 10?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
-                    Console.ReadLine();
+                    int numberchoice1 = Convert.ToInt32(Console.ReadLine());
+
+                    if (numberchoice1 == 1) {
+                        Console.WriteLine("Please enter the number you wish to times by 10");
+                        float numbertimes10 = Convert.ToInt32(Console.ReadLine());
+                        float numbertimes10total = numbertimes10 * 10;
+                        Console.WriteLine(numbertimes10 + " times by ten is " + numbertimes10total);
+                        Console.ReadLine();
+                    }
+                    if (numberchoice1 == 2) {
+                        Console.WriteLine("Please enter the number you wish to divide by 10");
+                        float numberdivide10 = Convert.ToInt32(Console.ReadLine());
+                        float numberdivide10total = numberdivide10 / 10;
+                        Console.WriteLine(numberdivide10 + " divided by ten is " + numberdivide10total);
+                        Console.ReadLine();
+                    }
                 }
                 if (numberchoice == 2) {
                     Console.WriteLine("You have chosen the number 100");
                     Console.WriteLine("Do you wish to times or divide your number by 100?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
-                    Console.ReadLine();
+                    int numberchoice1 = Convert.ToInt32(Console.ReadLine());
+
+                    if (numberchoice1 == 1) {
+                        Console.WriteLine("Please enter the number you wish to times by 100");
+                        float numbertimes100 = Convert.ToInt32(Console.ReadLine());
+                        float numbertimes100total = numbertimes100 * 100;
+                        Console.WriteLine(numbertimes100 + " times by one hundred is " + numbertimes100total);
+                        Console.ReadLine();
+                    }
+                    if (numberchoice1 == 2) {
+                        Console.WriteLine("Please enter the number you wish to divide by 100");
+                        float numberdivide100 = Convert.ToInt32(Console.ReadLine());
+                        float numberdivide100total = numberdivide100 / 100;
+                        Console.WriteLine(numberdivide100 + " divide by one hundred is " + numberdivide100total);
+                        Console.ReadLine();
+                    }
                 }
                 if (numberchoice == 3){
                     Console.WriteLine("You have chosen the number 1000");
                     Console.WriteLine("Do you wish to times or divide your number by 1000?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
-                    Console.ReadLine();
+                    int numberchoice1 = Convert.ToInt32(Console.ReadLine());
+
+                    if (numberchoice1 == 1) {
+                        Console.WriteLine("Please enter the number you want to times by 1000");
+                        float numbertimes1000 = Convert.ToInt32(Console.ReadLine());
+                        float numbertimes1000total = numbertimes1000 * 1000;
+                        Console.WriteLine(numbertimes1000 + " times by one thousand is " + numbertimes1000total);
+                        Console.ReadLine();
+                    }
+                    if (numberchoice1 == 2) {
+                        Console.WriteLine("Please enter the number you want to divide by 1000");
+                        float numberdivide1000 = Convert.ToInt32(Console.ReadLine());
+                        float numberdivide1000total = numberdivide1000 / 1000;
+                        Console.WriteLine(numbertimes1000 + " divide by one thousand is " + numbertimes10total);
+                        Console.ReadLine();
+                    }
                 }
 
             }
