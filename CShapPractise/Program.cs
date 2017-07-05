@@ -196,12 +196,29 @@ namespace CShapPractise
                 Console.WriteLine("2. 100");
                 Console.WriteLine("3. 1000");
 
+                int numberchoice = Convert.ToInt32(Console.ReadLine());
+                if (numberchoice == 1) {
+                    Console.WriteLine("You have chosen the number 10");
+                    Console.WriteLine("Do you wish to times or divide your number by 10?");
+                    Console.WriteLine("1. Times my number");
+                    Console.WriteLine("2. Divide my number");
+                    Console.ReadLine();
+                }
+                if (numberchoice == 2) {
+                    Console.WriteLine("You have chosen the number 100");
+                    Console.WriteLine("Do you wish to times or divide your number by 100?");
+                    Console.WriteLine("1. Times my number");
+                    Console.WriteLine("2. Divide my number");
+                    Console.ReadLine();
+                }
+                if (numberchoice == 3){
+                    Console.WriteLine("You have chosen the number 1000");
+                    Console.WriteLine("Do you wish to times or divide your number by 1000?");
+                    Console.WriteLine("1. Times my number");
+                    Console.WriteLine("2. Divide my number");
+                    Console.ReadLine();
+                }
 
-                string numberchoise = Console.ReadLine();
-                
-                Console.WriteLine("Your number is " + number1times10);
-                Console.ReadKey();
-                //multiplies a number by 10
             }
             if (userresponce3 == "12")
             {
