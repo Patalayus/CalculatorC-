@@ -292,6 +292,7 @@ namespace CShapPractise
                     Console.WriteLine("6. Momentum of an object");
                     Console.WriteLine("7. Voltage");
                     Console.WriteLine("8. Volume of a Cylinder.");
+                    Console.WriteLine("9. Young's Modulus");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -493,7 +494,25 @@ namespace CShapPractise
                             //works out volume from radius
                         }
                     }
-                    else if (useranswer2 == 2){
+                    else if (useranswer3 == 9)
+                        ///F = KX = Hooke's
+                        ///F = MG
+                        ///Strain = X / L
+                        ///Stress = F / A
+                        ///Work Done = F x D on a stretched object
+                        ///E = Stress / Strain = F/A//X/L = FL/XA = WK/Vol
+                    {
+                        Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
+                        Console.Write("Please give your Force on the object in newtons:");
+                        float enps_1 = Convert.ToInt32(Console.ReadLine());
+      
+                        Console.Write("\nPlease give your Crossectional Area of the object: ");
+                        float enps_2 = Convert.ToInt32(Console.ReadLine());
+
+
+
+                    }
+                    else if (useranswer2 == 2) {
                         goto en3x_1;
                     }
                 }
