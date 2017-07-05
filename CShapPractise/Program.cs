@@ -19,19 +19,18 @@ namespace CShapPractise
         static void Main(string[] args)
 
         {
-
-            start:
+            en3x_1:
             Console.WriteLine("What do you wish to do?");
-            Console.WriteLine("1. Add");
-            Console.WriteLine("2. Minus");
-            Console.WriteLine("3. Multiply");
-            Console.WriteLine("4. Divide");
-            Console.WriteLine("5. Mod");
-            Console.WriteLine("6. Square a number");
-            Console.WriteLine("7. Cube a number");
-            Console.WriteLine("8. Find square root of a number");
-            Console.WriteLine("9. Add percentage to something");
-            Console.WriteLine("10. Work out a percentage of something");
+            Console.WriteLine("1. Add,");
+            Console.WriteLine("2. Minus,");
+            Console.WriteLine("3. Multiply,");
+            Console.WriteLine("4. Divide,");
+            Console.WriteLine("5. Mod,");
+            Console.WriteLine("6. Square a number,");
+            Console.WriteLine("7. Cube a number,");
+            Console.WriteLine("8. Find square root of a number,");
+            Console.WriteLine("9. Add percentage to something,");
+            Console.WriteLine("10. Work out a percentage of something,");
             Console.WriteLine("11. Times or divide a number by 10,100 or 1000.");
 
             //option menu 1
@@ -494,8 +493,8 @@ namespace CShapPractise
                             //works out volume from radius
                         }
                     }
-                    else {
-                        goto start;
+                    else if (useranswer2 == 2){
+                        goto en3x_1;
                     }
                 }
             }
