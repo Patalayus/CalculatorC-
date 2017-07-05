@@ -518,6 +518,9 @@ namespace CShapPractise
                         Console.Write("\nPlease give the initial length of the object: ");
                         float enps_4 = Convert.ToInt32(Console.ReadLine());
                         ///L
+
+                        float enps_1DIVenps_2 = enps_1 / enps_2;
+                        float enps_3DIVenps_4 = enps_3 / enps_4;
                     }
                     else if (useranswer2 == 2) {
                         goto en3x_1;
