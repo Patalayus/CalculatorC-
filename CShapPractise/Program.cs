@@ -504,22 +504,22 @@ namespace CShapPractise
                     {
                         Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
                         Console.Write("Please give your force on the object in newtons: ");
-                        float enps_1=Convert.ToInt32(Console.ReadLine());
+                        double enps_1=Convert.ToInt32(Console.ReadLine());
                         ///F
                         Console.Write("\nPlease give your crossectional area of the object: ");
-                        float enps_2=Convert.ToInt32(Console.ReadLine());
+                        double enps_2=Convert.ToInt32(Console.ReadLine());
                         ///A
                         Console.Write("\nPlease give the extension on the object: ");
-                        float enps_3 = Convert.ToInt32(Console.ReadLine());
+                        double enps_3 = Convert.ToInt32(Console.ReadLine());
                         ///X
                         Console.Write("\nPlease give the initial length of the object: ");
-                        float enps_4 = Convert.ToInt32(Console.ReadLine());
+                        double enps_4 = Convert.ToInt32(Console.ReadLine());
                         ///L
-                        float enps_1DIVenps_2 = enps_1 / enps_2;
-                        float enps_3DIVenps_4 = enps_3 / enps_4;
+                        double enps_1DIVenps_2 = enps_1 / enps_2;
+                        double enps_3DIVenps_4 = enps_3 / enps_4;
                         ///Initial calculations
 
-                        float enps_1DIVenps_2DIVX2enps_3DIVenps_4 = enps_1DIVenps_2 / enps_3DIVenps_4;
+                        double enps_1DIVenps_2DIVX2enps_3DIVenps_4 = enps_1DIVenps_2 / enps_3DIVenps_4;
                         Console.Write("The Young's Modulus of your object is "+ enps_1DIVenps_2DIVX2enps_3DIVenps_4);
                         Console.ReadKey();
                         //Final Calculation = Total print
