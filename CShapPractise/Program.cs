@@ -503,14 +503,21 @@ namespace CShapPractise
                         ///E = Stress / Strain = F/A//X/L = FL/XA = WK/Vol
                     {
                         Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
-                        Console.Write("Please give your Force on the object in newtons:");
-                        float enps_1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Please give your force on the object in newtons:");
+                        float enps_1=Convert.ToInt32(Console.ReadLine());
+                        ///F
       
-                        Console.Write("\nPlease give your Crossectional Area of the object: ");
-                        float enps_2 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("\nPlease give your crossectional area of the object: ");
+                        float enps_2=Convert.ToInt32(Console.ReadLine());
+                        ///A
 
+                        Console.Write("\nPlease give the extension on the object: ");
+                        float enps_3 = Convert.ToInt32(Console.ReadLine());
+                        ///X
 
-
+                        Console.Write("\nPlease give the initial length of the object: ");
+                        float enps_4 = Convert.ToInt32(Console.ReadLine());
+                        ///L
                     }
                     else if (useranswer2 == 2) {
                         goto en3x_1;
