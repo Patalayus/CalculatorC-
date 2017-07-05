@@ -236,7 +236,7 @@ namespace CShapPractise
                         float numbertimes100total = numbertimes100 * 100;
                         Console.WriteLine(numbertimes100 + " times by one hundred is " + numbertimes100total);
                         Console.ReadLine();
-                        //divide a number
+                        //divide a number by 100
                     }
                     if (numberchoice1 == 2) {
                         Console.WriteLine("Please enter the number you wish to divide by 100");
@@ -244,6 +244,7 @@ namespace CShapPractise
                         float numberdivide100total = numberdivide100 / 100;
                         Console.WriteLine(numberdivide100 + " divide by one hundred is " + numberdivide100total);
                         Console.ReadLine();
+                        //divide a number by 100
                     }
                 }
                 if (numberchoice == 3){
@@ -259,6 +260,7 @@ namespace CShapPractise
                         float numbertimes1000total = numbertimes1000 * 1000;
                         Console.WriteLine(numbertimes1000 + " times by one thousand is " + numbertimes1000total);
                         Console.ReadLine();
+                        //times a number by 1000
                     }
                     if (numberchoice1 == 2) {
                         Console.WriteLine("Please enter the number you want to divide by 1000");
@@ -266,6 +268,7 @@ namespace CShapPractise
                         float numberdivide1000total = numberdivide1000 / 1000;
                         Console.WriteLine(numberdivide1000 + " divide by one thousand is " + numberdivide1000total);
                         Console.ReadLine();
+                        //divide a number by 1000
                     }
                 }
             }
