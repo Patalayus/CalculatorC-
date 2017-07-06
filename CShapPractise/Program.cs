@@ -31,7 +31,8 @@ namespace CShapPractise
             Console.WriteLine("8. Find square root of a number,");
             Console.WriteLine("9. Add percentage to something,");
             Console.WriteLine("10. Work out a percentage of something,");
-            Console.WriteLine("11. Times or divide a number by 10,100 or 1000.");
+            Console.WriteLine("11. Times or divide a number by 10,100 or 1000,");
+            Console.WriteLine("12. Output all odd or even numbers.");
 
             //option menu 1
             Console.WriteLine("\nPress any key for advanced features.");
@@ -246,7 +247,7 @@ namespace CShapPractise
                         //divide a number by 100
                     }
                 }
-                if (numberchoice == 3){
+                if (numberchoice == 3) {
                     Console.WriteLine("You have chosen the number 1000");
                     Console.WriteLine("Do you wish to times or divide your number by 1000?");
                     Console.WriteLine("1. Times my number");
@@ -268,6 +269,24 @@ namespace CShapPractise
                         Console.WriteLine(numberdivide1000 + " divide by one thousand is " + numberdivide1000total);
                         Console.ReadLine();
                         //divide a number by 1000
+                    }
+                }
+                else if (userresponce3 == "12") {
+                    Console.WriteLine("You have chosen to output all odd or even numbers.");
+                    Console.WriteLine("Please choose an option");
+                    Console.WriteLine("1. Even Number");
+                    Console.WriteLine("2. Odd Numbers");
+                    int enps_x354 = Convert.ToInt32(Console.ReadLine());
+                    if (enps_x354 == 1) {
+                        Console.WriteLine("You have chosen to output all even numbers");
+                        while (true) {
+                        }
+                    }
+                    else if (enps_x354 == 2) {
+                        Console.WriteLine("You have chosen to output all odd numbers");
+                        while (true) {
+                        }
+
                     }
                 }
             }
@@ -502,6 +521,7 @@ namespace CShapPractise
                         ///Work Done = F x D on a stretched object
                         ///E = Stress / Strain = F/A//X/L = FL/XA = WK/Vol
                     {
+                        
                         Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
                         Console.Write("Please give your force on the object in newtons: ");
                         double enps_1=Convert.ToInt32(Console.ReadLine());
