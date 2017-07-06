@@ -24,6 +24,7 @@ namespace CShapPractise
             double enps_x23ADDenps_x24 = enps_x23 + enps_x24;
             double enps_x23MULTenps_24 = enps_x23 * enps_x24;
             Console.WriteLine("Your total is " + enps_x23MULTenps_24);
+            // this subroutine adds two numbers and multiplies the two numbers
         }
 
         static void Main(string[] args)
