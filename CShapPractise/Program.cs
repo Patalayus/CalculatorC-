@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System;
+using System.Threading;
+
 
 namespace CShapPractise
 {
@@ -186,7 +189,7 @@ namespace CShapPractise
                     Console.WriteLine("75% of " + number2 + " is " + number2 * 0.75);
                     Console.ReadKey();
                 }
-                
+
             }
             if (userresponce3 == "11")
             {
@@ -198,15 +201,17 @@ namespace CShapPractise
                 Console.WriteLine("3. 1000");
 
                 int numberchoice = Convert.ToInt32(Console.ReadLine());
-                
-                if (numberchoice == 1) {
+
+                if (numberchoice == 1)
+                {
                     Console.WriteLine("You have chosen the number 10");
                     Console.WriteLine("Do you wish to times or divide your number by 10?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
                     int numberchoice1 = Convert.ToInt32(Console.ReadLine());
 
-                    if (numberchoice1 == 1) {
+                    if (numberchoice1 == 1)
+                    {
                         Console.WriteLine("Please enter the number you wish to times by 10");
                         float numbertimes10 = Convert.ToInt32(Console.ReadLine());
                         float numbertimes10total = numbertimes10 * 10;
@@ -214,7 +219,8 @@ namespace CShapPractise
                         Console.ReadLine();
                         //times a number by 10
                     }
-                    if (numberchoice1 == 2) {
+                    if (numberchoice1 == 2)
+                    {
                         Console.WriteLine("Please enter the number you wish to divide by 10");
                         float numberdivide10 = Convert.ToInt32(Console.ReadLine());
                         float numberdivide10total = numberdivide10 / 10;
@@ -223,14 +229,16 @@ namespace CShapPractise
                         //divide a number by 10
                     }
                 }
-                if (numberchoice == 2) {
+                if (numberchoice == 2)
+                {
                     Console.WriteLine("You have chosen the number 100");
                     Console.WriteLine("Do you wish to times or divide your number by 100?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
                     int numberchoice1 = Convert.ToInt32(Console.ReadLine());
 
-                    if (numberchoice1 == 1) {
+                    if (numberchoice1 == 1)
+                    {
                         Console.WriteLine("Please enter the number you wish to times by 100");
                         float numbertimes100 = Convert.ToInt32(Console.ReadLine());
                         float numbertimes100total = numbertimes100 * 100;
@@ -238,7 +246,8 @@ namespace CShapPractise
                         Console.ReadLine();
                         //divide a number by 100
                     }
-                    if (numberchoice1 == 2) {
+                    if (numberchoice1 == 2)
+                    {
                         Console.WriteLine("Please enter the number you wish to divide by 100");
                         float numberdivide100 = Convert.ToInt32(Console.ReadLine());
                         float numberdivide100total = numberdivide100 / 100;
@@ -247,14 +256,16 @@ namespace CShapPractise
                         //divide a number by 100
                     }
                 }
-                if (numberchoice == 3) {
+                if (numberchoice == 3)
+                {
                     Console.WriteLine("You have chosen the number 1000");
                     Console.WriteLine("Do you wish to times or divide your number by 1000?");
                     Console.WriteLine("1. Times my number");
                     Console.WriteLine("2. Divide my number");
                     int numberchoice1 = Convert.ToInt32(Console.ReadLine());
 
-                    if (numberchoice1 == 1) {
+                    if (numberchoice1 == 1)
+                    {
                         Console.WriteLine("Please enter the number you want to times by 1000");
                         float numbertimes1000 = Convert.ToInt32(Console.ReadLine());
                         float numbertimes1000total = numbertimes1000 * 1000;
@@ -262,7 +273,8 @@ namespace CShapPractise
                         Console.ReadLine();
                         //times a number by 1000
                     }
-                    if (numberchoice1 == 2) {
+                    if (numberchoice1 == 2)
+                    {
                         Console.WriteLine("Please enter the number you want to divide by 1000");
                         float numberdivide1000 = Convert.ToInt32(Console.ReadLine());
                         float numberdivide1000total = numberdivide1000 / 1000;
@@ -271,21 +283,32 @@ namespace CShapPractise
                         //divide a number by 1000
                     }
                 }
-                else if (userresponce3 == "12") {
-                    Console.WriteLine("You have chosen to output all odd or even numbers.");
-                    Console.WriteLine("Please choose an option");
-                    Console.WriteLine("1. Even Number");
-                    Console.WriteLine("2. Odd Numbers");
-                    int enps_x354 = Convert.ToInt32(Console.ReadLine());
-                    if (enps_x354 == 1) {
-                        Console.WriteLine("You have chosen to output all even numbers");
-                        while (true) {
-                        }
+            }
+            else if (userresponce3 == "12")
+            {
+                Console.WriteLine("You have chosen to output all odd or even numbers.");
+                Console.WriteLine("Please choose an option");
+                Console.WriteLine("1. Even Number");
+                Console.WriteLine("2. Odd Numbers");
+                int enps_x354 = Convert.ToInt32(Console.ReadLine());
+                if (enps_x354 == 1)
+                {
+                    Console.WriteLine("You have chosen to output all even numbers");
+                    int even_x324 = 2;
+                    int time_x324 = 1;
+                    while (true)
+                    {
+                        Console.WriteLine("Value " + time_x324 + " of even numbers is " + even_x324);
+                        even_x324 += 2;
+                        time_x324 += 1;
+                        Thread.Sleep(500);
                     }
-                    else if (enps_x354 == 2) {
-                        Console.WriteLine("You have chosen to output all odd numbers");
-                        while (true) {
-                        }
+                }
+                else if (enps_x354 == 2)
+                {
+                    Console.WriteLine("You have chosen to output all odd numbers");
+                    while (true)
+                    {
 
                     }
                 }
@@ -481,7 +504,8 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out voltage
                     }
-                    else if (useranswer3 == 8) {
+                    else if (useranswer3 == 8)
+                    {
                         Console.WriteLine("You have chosen to work out the volume of a cylinder.");
                         Console.WriteLine("Do you have an area or a radius?");
                         Console.WriteLine("1. Area of a Circle");
@@ -499,7 +523,8 @@ namespace CShapPractise
                             Console.ReadKey();
                             //works out volume from area
                         }
-                        else if (CorR == 2) {
+                        else if (CorR == 2)
+                        {
                             Console.WriteLine("You have chosen a radius. Please write your radius.");
                             float radiusofacircle = Convert.ToInt64(Console.ReadLine());
                             float radtimesrad = radiusofacircle * radiusofacircle;
@@ -514,20 +539,20 @@ namespace CShapPractise
                         }
                     }
                     else if (useranswer3 == 9)
-                        ///F = KX = Hooke's
-                        ///F = MG
-                        ///Strain = X / L
-                        ///Stress = F / A
-                        ///Work Done = F x D on a stretched object
-                        ///E = Stress / Strain = F/A//X/L = FL/XA = WK/Vol
+                    ///F = KX = Hooke's
+                    ///F = MG
+                    ///Strain = X / L
+                    ///Stress = F / A
+                    ///Work Done = F x D on a stretched object
+                    ///E = Stress / Strain = F/A//X/L = FL/XA = WK/Vol
                     {
-                        
+
                         Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
                         Console.Write("Please give your force on the object in newtons: ");
-                        double enps_1=Convert.ToInt32(Console.ReadLine());
+                        double enps_1 = Convert.ToInt32(Console.ReadLine());
                         ///F
                         Console.Write("\nPlease give your crossectional area of the object: ");
-                        double enps_2=Convert.ToInt32(Console.ReadLine());
+                        double enps_2 = Convert.ToInt32(Console.ReadLine());
                         ///A
                         Console.Write("\nPlease give the extension on the object: ");
                         double enps_3 = Convert.ToInt32(Console.ReadLine());
@@ -540,18 +565,21 @@ namespace CShapPractise
                         ///Initial calculations
 
                         double enps_1DIVenps_2DIVX2enps_3DIVenps_4 = enps_1DIVenps_2 / enps_3DIVenps_4;
-                        Console.Write("The Young's Modulus of your object is "+ enps_1DIVenps_2DIVX2enps_3DIVenps_4);
+                        Console.Write("The Young's Modulus of your object is " + enps_1DIVenps_2DIVX2enps_3DIVenps_4);
                         Console.ReadKey();
                         //Final Calculation = Total print
                     }
-                    else if (useranswer2 == 2) {
+                    else if (useranswer2 == 2)
+                    {
                         goto en3x_1;
                     }
                 }
             }
+                }
             }
         }
-    }
+    
+
 
 
 
