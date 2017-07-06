@@ -15,7 +15,15 @@ namespace CShapPractise
         {
             Console.WriteLine("This is the secondary subroutine");
             Console.ReadKey();
-            while (true) { Console.WriteLine("You have called the secondary subroutine"); }
+            Console.WriteLine("You have called the secondary subroutine");
+             //this section will be able to add two numbers together and then times the total by the numbers
+            Console.WriteLine("Please enter the first number");
+            double enps_x23 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            double enps_x24 = Convert.ToInt32(Console.ReadLine());
+            double enps_x23ADDenps_x24 = enps_x23 + enps_x24;
+            double enps_x23MULTenps_24 = enps_x23 * enps_x24;
+            Console.WriteLine("Your total is " + enps_x23MULTenps_24);
         }
 
         static void Main(string[] args)
