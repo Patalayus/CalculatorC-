@@ -257,6 +257,7 @@ namespace CShapPractise
                 }
                 if (numberchoice == 3)
                 {
+                    //user options
                     Console.WriteLine("You have chosen the number 1000");
                     Console.WriteLine("Do you wish to times or divide your number by 1000?");
                     Console.WriteLine("1. Times my number");
