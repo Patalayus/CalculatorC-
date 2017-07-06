@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using System;
 using System.Threading;
 
 
@@ -293,6 +292,7 @@ namespace CShapPractise
                 int enps_x354 = Convert.ToInt32(Console.ReadLine());
                 if (enps_x354 == 1)
                 {
+                    //prints even numbers
                     Console.WriteLine("You have chosen to output all even numbers");
                     int even_x324 = 2;
                     int time_x324 = 1;
@@ -306,10 +306,16 @@ namespace CShapPractise
                 }
                 else if (enps_x354 == 2)
                 {
+                    //prints odd numbers
                     Console.WriteLine("You have chosen to output all odd numbers");
+                    double odd_x355 = 3;
+                    double time_x355 = 1;
                     while (true)
                     {
-
+                        Console.WriteLine("Value " + time_x355 + " of odd numbers is " + odd_x355);
+                        odd_x355 += 2;
+                        time_x355 += 1;
+                        Thread.Sleep(500);
                     }
                 }
             }
