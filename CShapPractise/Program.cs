@@ -586,11 +586,14 @@ namespace CShapPractise
                     else if (useranswer3 == 10) {
                         Console.WriteLine("You have chosen to work out the energy of a moving object.");
                         //E=1/2*M(V^2)
-                        Console.Write("Please state the mass of your object: ");
+                        Console.Write("Please state the mass of your object in grams: ");
                         double en1ps_x = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("Please confirm your velocity: ");
+                        Console.Write("Please confirm your velocity in m/s: ");
                         double en2ps_x = Convert.ToInt32(Console.ReadLine());
-
+                        double en2ps_x62 = en2ps_x * en2ps_x;
+                        double en1ps_x_05 = en1ps_x * 0.5;
+                        double en1ps_x_05MULTen2ps_x62 = en1ps_x_05 * en2ps_x62;
+                        Console.WriteLine("The energy of your moving object is");
                     }
                     else if (useranswer3 == 2)
                     {
