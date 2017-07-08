@@ -26,7 +26,6 @@ namespace CShapPractise
             Console.WriteLine("Your total is " + enps_x23MULTenps_24);
             // this subroutine adds two numbers and multiplies the two numbers
         }
-
         static void Main(string[] args)
 
         {
@@ -351,6 +350,7 @@ namespace CShapPractise
                     Console.WriteLine("7. Voltage");
                     Console.WriteLine("8. Volume of a Cylinder.");
                     Console.WriteLine("9. Young's Modulus");
+                    Console.WriteLine("10. Work out the energy of a mocving object");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -379,7 +379,6 @@ namespace CShapPractise
                         Console.WriteLine();
                         Console.Write("Your negative x is: " + bottom2);
                         Console.ReadKey();
-
                     }
                     else if (useranswer3 == 2)
                     {
@@ -414,7 +413,6 @@ namespace CShapPractise
                         float squaredradius = Convert.ToInt32(radius2 * radius2);
                         float area = Convert.ToInt32(3.141592654 * squaredradius);
                         Console.WriteLine("Your area is " + radius2 + " m^2"); Console.ReadLine();
-
                     }
                     else if (useranswer3 == 5)
                     {
