@@ -350,7 +350,7 @@ namespace CShapPractise
                     Console.WriteLine("7. Voltage");
                     Console.WriteLine("8. Volume of a Cylinder.");
                     Console.WriteLine("9. Young's Modulus");
-                    Console.WriteLine("10. Work out the energy of a mocving object");
+                    Console.WriteLine("10. Work out the energy of a moving object");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -593,7 +593,8 @@ namespace CShapPractise
                         double en2ps_x62 = en2ps_x * en2ps_x;
                         double en1ps_x_05 = en1ps_x * 0.5;
                         double en1ps_x_05MULTen2ps_x62 = en1ps_x_05 * en2ps_x62;
-                        Console.WriteLine("The energy of your moving object is");
+                        Console.WriteLine("The energy of your moving object is "+en1ps_x_05MULTen2ps_x62+"J");
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
