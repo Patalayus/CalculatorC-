@@ -608,7 +608,9 @@ namespace CShapPractise
                         Console.WriteLine("Please state your current.");
                         double enpsx_01 = Convert.ToInt32(Console.ReadLine());
                         //P=VxI
-                        
+                        double enpsx_0MULTenpsx_01 = enpsx_0 * enpsx_01;
+                        Console.WriteLine("Your power in watts is " + enpsx_0MULTenpsx_01 + "W");
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
