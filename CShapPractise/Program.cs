@@ -617,7 +617,11 @@ namespace CShapPractise
                     else if (useranswer3 == 12) {
                         //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
-                        Console.ReadLine();
+                        Console.WriteLine("Please give your mass");
+                        double enps_mx = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Please give your gravitational field strength (earths is 9.81)");
+                        double enps_gfsx = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Please give your change in height in meters:");
                     }
                     else if (useranswer3 == 2)
                     {
