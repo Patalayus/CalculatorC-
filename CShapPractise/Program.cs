@@ -615,6 +615,7 @@ namespace CShapPractise
                         Console.ReadKey();
                     }
                     else if (useranswer3 == 12) {
+                        //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
                         Console.ReadLine();
                     }
