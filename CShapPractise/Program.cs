@@ -352,6 +352,7 @@ namespace CShapPractise
                     Console.WriteLine("9. Young's Modulus");
                     Console.WriteLine("10. Work out the energy of a moving object");
                     Console.WriteLine("11. Work out the Power in watts of a circuit");
+                    Console.WriteLine("12. Work out the change in gravitational potential energy of an object");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -601,7 +602,8 @@ namespace CShapPractise
                         Console.WriteLine("The energy of your moving object is " + en1ps_x_05MULTen2ps_x62 + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 11) {
+                    else if (useranswer3 == 11)
+                    {
                         Console.WriteLine("You have chosen to work out the power of a circuit.");
                         Console.WriteLine("Please state your voltage.");
                         double enpsx_0 = Convert.ToInt32(Console.ReadLine());
@@ -611,6 +613,10 @@ namespace CShapPractise
                         double enpsx_0MULTenpsx_01 = enpsx_0 * enpsx_01;
                         Console.WriteLine("Your power in watts is " + enpsx_0MULTenpsx_01 + "W");
                         Console.ReadKey();
+                    }
+                    else if (useranswer3 == 12) {
+                        Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
+                        Console.ReadLine();
                     }
                     else if (useranswer3 == 2)
                     {
