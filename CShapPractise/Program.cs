@@ -622,6 +622,9 @@ namespace CShapPractise
                         Console.WriteLine("Please give your gravitational field strength (earths is 9.81)");
                         double enps_gfsx = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Please give your change in height in meters:");
+                        double enps_hx = Convert.ToInt32(Console.ReadLine());
+                        //values obtained
+
                     }
                     else if (useranswer3 == 2)
                     {
