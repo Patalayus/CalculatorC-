@@ -618,16 +618,15 @@ namespace CShapPractise
                         //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
                         Console.WriteLine("Please give your mass in kilograms:");
-                        double enps_mx = Convert.ToInt32(Console.ReadLine());
+                        double enps_mx = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your gravitational field strength (earths is 9.81) in m/s^2:");
-                        double enps_gx = Convert.ToInt32(Console.ReadLine());
+                        double enps_gx = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your change in height in meters:");
-                        double enps_hx = Convert.ToInt32(Console.ReadLine());
+                        double enps_hx = Convert.ToDouble(Console.ReadLine());
                         //values obtained
                         double enps_mxMULTenps_gxMULTenps_hx = enps_mx * enps_gx * enps_hx;
-                        Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx);
+                        Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx+"J");
                         Console.ReadKey();
-
                     }
                     else if (useranswer3 == 2)
                     {
