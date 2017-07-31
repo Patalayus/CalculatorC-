@@ -353,6 +353,7 @@ namespace CShapPractise
                     Console.WriteLine("10. Work out the energy of a moving object");
                     Console.WriteLine("11. Work out the Power in watts of a circuit");
                     Console.WriteLine("12. Work out the change in gravitational potential energy of an object");
+                    Console.WriteLine("13. Work out the velocity of a wave given the frequency and wavelength");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -630,7 +631,16 @@ namespace CShapPractise
                         Console.ReadKey();
                     }
                     else if (useranswer3 == 13) {
-                        Console.WriteLine("You have chosen to ");
+                        //V=fλ
+                        Console.WriteLine("You have chosen to work out the velocity of a wave");
+                        Console.WriteLine("Please give the frequency of the wave (give answer in Hz)");
+                        double enps_xf = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Please give the wavelength of the wave (give answer in m)");
+                        double enps_xλ = Convert.ToDouble(Console.ReadLine());
+                        double enps_xfMULTenps_xλ = enps_xf * enps_xλ;
+                        Console.WriteLine("Your total is" + enps_xfMULTenps_xλ);
+                        Console.ReadKey();
+
                     }
                     else if (useranswer3 == 2)
                     {
