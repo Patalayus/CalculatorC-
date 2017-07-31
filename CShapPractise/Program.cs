@@ -614,7 +614,8 @@ namespace CShapPractise
                         Console.WriteLine("Your power in watts is " + enpsx_0MULTenpsx_01 + "W");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 12) {
+                    else if (useranswer3 == 12)
+                    {
                         //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
                         Console.WriteLine("Please give your mass in kilograms:");
@@ -625,8 +626,11 @@ namespace CShapPractise
                         double enps_hx = Convert.ToDouble(Console.ReadLine());
                         //values obtained
                         double enps_mxMULTenps_gxMULTenps_hx = enps_mx * enps_gx * enps_hx;
-                        Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx+"J");
+                        Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx + "J");
                         Console.ReadKey();
+                    }
+                    else if (useranswer3 == 13) {
+                        Console.WriteLine("You have chosen to ");
                     }
                     else if (useranswer3 == 2)
                     {
