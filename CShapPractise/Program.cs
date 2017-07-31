@@ -638,9 +638,8 @@ namespace CShapPractise
                         Console.WriteLine("Please give the wavelength of the wave (give answer in m)");
                         double enps_xλ = Convert.ToDouble(Console.ReadLine());
                         double enps_xfMULTenps_xλ = enps_xf * enps_xλ;
-                        Console.WriteLine("Your total is" + enps_xfMULTenps_xλ);
+                        Console.WriteLine("Your total is " + enps_xfMULTenps_xλ+"m/s^-1");
                         Console.ReadKey();
-
                     }
                     else if (useranswer3 == 2)
                     {
