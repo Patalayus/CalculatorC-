@@ -667,24 +667,26 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your time");
                             Console.WriteLine("Please enter your acceleration");
                         }
-                        else if (enps_xANS == 2)
+                        else if (enps_xANS == 3)
                         {
                             Console.WriteLine("You have chosen s=1/2*(u+v)*t");
                             Console.WriteLine("Please enter your initial velocity");
                             Console.WriteLine("Please enter your final velocity");
                             Console.WriteLine("Please enter your time");
                         }
-                        else if (enps_xANS == 2)
+                        else if (enps_xANS == 4)
                         {
                             Console.WriteLine("You have chosen v^2=u^2+2*as");
                             Console.WriteLine("Please enter your initial velocity");
                             Console.WriteLine("Please enter your acceleration");
                             Console.WriteLine("Please enter your displacement");
                         }
-                        else if (enps_xANS == 2)
+                        else if (enps_xANS == 5)
                         {
                             Console.WriteLine("You have chosen s=vt-1/2*at^2");
-
+                            Console.WriteLine("Please enter your final velocity");
+                            Console.WriteLine("Please enter your time");
+                            Console.WriteLine("Please enter your acceleration");
                         }
                     }
                     else if (useranswer3 == 2)
