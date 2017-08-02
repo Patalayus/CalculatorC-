@@ -657,15 +657,25 @@ namespace CShapPractise
                         {
                             Console.WriteLine("You have chosen v=u+at");
                             Console.WriteLine("Please enter your initial velocity");
+                            double enps_64v = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your acceleration");
+                            double enps_64a = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your time");
+                            double enps_64t = Convert.ToDouble(Console.ReadLine());
+                            double enps_TOT64 = enps_64v + enps_64a * enps_64t;
+                            Console.WriteLine("Your total is "+enps_TOT64);
                         }
                         else if (enps_xANS == 2)
                         {
                             Console.WriteLine("You have chosen s=u*t+1/2*at^2");
                             Console.WriteLine("Please enter your initial velocity");
+                            double enps_32v = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your time");
+                            double enps_32t = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your acceleration");
+                            double enps_32a = Convert.ToDouble(Console.ReadLine());
+                            // s=u*t+1/2*at^2
+
                         }
                         else if (enps_xANS == 3)
                         {
