@@ -644,9 +644,13 @@ namespace CShapPractise
                         Console.ReadKey();
                     }
                     else if (useranswer3 == 14) {
-                        /// s=ut+1/2at^2
-                        /// s=1/2(u+v)t
-                        Console.WriteLine("");
+                        /// v=u+at
+                        /// s=u*t+1/2*at^2
+                        /// s=1/2*(u+v)*t
+                        /// v^2=u^2+2*as
+                        /// s=vt-1/2*at^2
+                        Console.WriteLine("You have chosen to work out the displacement of an object. Please choose a SUVAT method.");
+                        Console.WriteLine(" 1. v=u+at\n2. s=u*t+1/2*at^2\n3. s=1/2*(u+v)*t\n4. v^2=u^2+2*as\n5. s=vt-1/2*at^2");
                     }
                     else if (useranswer3 == 2)
                     {
