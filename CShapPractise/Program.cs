@@ -354,6 +354,7 @@ namespace CShapPractise
                     Console.WriteLine("11. Work out the Power in watts of a circuit");
                     Console.WriteLine("12. Work out the change in gravitational potential energy of an object");
                     Console.WriteLine("13. Work out the velocity of a wave given the frequency and wavelength");
+                    Console.WriteLine("14. SUVAT");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -650,7 +651,28 @@ namespace CShapPractise
                         /// v^2=u^2+2*as
                         /// s=vt-1/2*at^2
                         Console.WriteLine("You have chosen to work out the displacement of an object. Please choose a SUVAT method.");
-                        Console.WriteLine(" 1. v=u+at\n2. s=u*t+1/2*at^2\n3. s=1/2*(u+v)*t\n4. v^2=u^2+2*as\n5. s=vt-1/2*at^2");
+                        Console.WriteLine("1. v=u+at\n2. s=u*t+1/2*at^2\n3. s=1/2*(u+v)*t\n4. v^2=u^2+2*as\n5. s=vt-1/2*at^2");
+                        int enps_xANS = Convert.ToInt32(Console.ReadLine());
+                        if (enps_xANS == 1)
+                        {
+                            Console.WriteLine("");
+                        }
+                        else if (enps_xANS == 2)
+                        {
+                            Console.WriteLine("");
+                        }
+                        else if (enps_xANS == 2)
+                        {
+                            Console.WriteLine("");
+                        }
+                        else if (enps_xANS == 2)
+                        {
+                            Console.WriteLine("");
+                        }
+                        else if (enps_xANS == 2)
+                        {
+                            Console.WriteLine("");
+                        }
                     }
                     else if (useranswer3 == 2)
                     {
