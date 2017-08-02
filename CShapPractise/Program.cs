@@ -664,6 +664,7 @@ namespace CShapPractise
                             double enps_64t = Convert.ToDouble(Console.ReadLine());
                             double enps_TOT64 = enps_64v + enps_64a * enps_64t;
                             Console.WriteLine("Your total is "+enps_TOT64);
+                            Console.ReadKey();
                         }
                         else if (enps_xANS == 2)
                         {
@@ -675,7 +676,11 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your acceleration");
                             double enps_32a = Convert.ToDouble(Console.ReadLine());
                             // s=u*t+1/2*at^2
-
+                            double enps_uMULTt = enps_32v * enps_32t;
+                            double enps_tA2 = enps_32t * enps_32t;
+                            double enps_TOT32 = enps_uMULTt + 0.5 * enps_32a * enps_tA2;
+                            Console.WriteLine("Your total is " + enps_TOT32);
+                            Console.ReadKey();
                         }
                         else if (enps_xANS == 3)
                         {
