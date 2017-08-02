@@ -644,6 +644,8 @@ namespace CShapPractise
                         Console.ReadKey();
                     }
                     else if (useranswer3 == 14) {
+                        /// s=ut+1/2at^2
+                        /// s=1/2(u+v)t
                         Console.WriteLine("");
                     }
                     else if (useranswer3 == 2)
