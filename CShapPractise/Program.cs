@@ -630,7 +630,8 @@ namespace CShapPractise
                         Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 13) {
+                    else if (useranswer3 == 13)
+                    {
                         //V=fλ
                         Console.WriteLine("You have chosen to work out the velocity of a wave");
                         Console.WriteLine("Please give the frequency of the wave (give answer in Hz)");
@@ -639,8 +640,11 @@ namespace CShapPractise
                         double enps_xλ = Convert.ToDouble(Console.ReadLine());
                         double enps_xfMULTenps_xλ = enps_xf * enps_xλ;
                         //units given for each answer (velocity of wave in m/s^-1)
-                        Console.WriteLine("Your total is " + enps_xfMULTenps_xλ+"m/s^-1");
+                        Console.WriteLine("Your total is " + enps_xfMULTenps_xλ + "m/s^-1");
                         Console.ReadKey();
+                    }
+                    else if (useranswer3 == 14) {
+                        Console.WriteLine("");
                     }
                     else if (useranswer3 == 2)
                     {
