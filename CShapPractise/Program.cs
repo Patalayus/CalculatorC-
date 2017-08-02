@@ -711,7 +711,7 @@ namespace CShapPractise
                             double enps_x128vMULTenps_x128v = enps_x128v * enps_x128v;
                             double enps_x128aMULTenps_x128s = enps_x128a * enps_x128s;
                             double enps_x120TOT = enps_x128vMULTenps_x128v + 2 * enps_x128aMULTenps_x128s;
-                            Console.WriteLine("Your total is " + enps_x120TOT);
+                            Console.WriteLine("Your total is " + enps_x120TOT+"^2");
                             Console.ReadLine();
                         }
                         else if (enps_xANS == 5)
@@ -723,6 +723,12 @@ namespace CShapPractise
                             double enps_x255t = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your acceleration");
                             double enps_x255a = Convert.ToDouble(Console.ReadLine());
+                            //s=vt-1/2*at^2
+                            double enps_vMULTt = enps_x255v * enps_x255t;
+                            double enps_tMULTt = enps_x255t * enps_x255t;
+                            double enps_x255TOT = enps_vMULTt - 0.5 * enps_x255a * enps_tMULTt;
+                            Console.WriteLine("Your total is " + enps_x255TOT);
+                            Console.ReadLine();
                         }
                     }
                     else if (useranswer3 == 2)
