@@ -655,23 +655,36 @@ namespace CShapPractise
                         int enps_xANS = Convert.ToInt32(Console.ReadLine());
                         if (enps_xANS == 1)
                         {
-                            Console.WriteLine("");
+                            Console.WriteLine("You have chosen v=u+at");
+                            Console.WriteLine("Please enter your initial velocity");
+                            Console.WriteLine("Please enter your acceleration");
+                            Console.WriteLine("Please enter your time");
                         }
                         else if (enps_xANS == 2)
                         {
-                            Console.WriteLine("");
+                            Console.WriteLine("You have chosen s=u*t+1/2*at^2");
+                            Console.WriteLine("Please enter your initial velocity");
+                            Console.WriteLine("Please enter your time");
+                            Console.WriteLine("Please enter your acceleration");
                         }
                         else if (enps_xANS == 2)
                         {
-                            Console.WriteLine("");
+                            Console.WriteLine("You have chosen s=1/2*(u+v)*t");
+                            Console.WriteLine("Please enter your initial velocity");
+                            Console.WriteLine("Please enter your final velocity");
+                            Console.WriteLine("Please enter your time");
                         }
                         else if (enps_xANS == 2)
                         {
-                            Console.WriteLine("");
+                            Console.WriteLine("You have chosen v^2=u^2+2*as");
+                            Console.WriteLine("Please enter your initial velocity");
+                            Console.WriteLine("Please enter your acceleration");
+                            Console.WriteLine("Please enter your displacement");
                         }
                         else if (enps_xANS == 2)
                         {
-                            Console.WriteLine("");
+                            Console.WriteLine("You have chosen s=vt-1/2*at^2");
+
                         }
                     }
                     else if (useranswer3 == 2)
