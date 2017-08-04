@@ -517,7 +517,8 @@ namespace CShapPractise
                         Console.WriteLine("Please enter your resistance in ohms");
                         float R = Convert.ToInt64(Console.ReadLine());
                         float V = I * R;
-                        Console.WriteLine("Your voltage is " + V + "V");
+                        enps_x86U enp = enps_x86U.V;
+                        Console.WriteLine("Your voltage is " +V+ enp );
                         Console.ReadKey();
                         //prints out voltage
                     }
