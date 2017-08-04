@@ -736,6 +736,8 @@ namespace CShapPractise
                         double enps_EO_ = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your theoretical total for energy output.");
                         double enps_TE_ = Convert.ToDouble(Console.ReadLine());
+                        double enps_ET_ = enps_EO_ / enps_TE_;
+                        double enps_ET2_ = enps_ET_ * 100;
                         
                     }
                     else if (useranswer3 == 2)
