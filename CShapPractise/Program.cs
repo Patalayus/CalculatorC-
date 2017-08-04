@@ -11,6 +11,7 @@ namespace CShapPractise
 {
     class Program
     {
+        
         public void secondary()
         {
             Console.WriteLine("This is the secondary subroutine");
@@ -738,7 +739,8 @@ namespace CShapPractise
                         double enps_TE_ = Convert.ToDouble(Console.ReadLine());
                         double enps_ET_ = enps_EO_ / enps_TE_;
                         double enps_ET2_ = enps_ET_ * 100;
-                        
+                        Console.WriteLine("Your efficiency is " + enps_ET2_ + "J");
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
