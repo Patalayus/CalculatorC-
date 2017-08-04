@@ -9,7 +9,7 @@ namespace CShapPractise
 {
     class Program
     {
-        enum powers_ { mult, sub, add, div };
+        enum enps_x86U { J, V, λ, ms1 };
         public void secondary()
         {
             Console.WriteLine("This is the secondary subroutine");
@@ -353,6 +353,7 @@ namespace CShapPractise
                     Console.WriteLine("12. Work out the change in gravitational potential energy of an object");
                     Console.WriteLine("13. Work out the velocity of a wave given the frequency and wavelength");
                     Console.WriteLine("14. SUVAT");
+                    Console.WriteLine("15. Work out efficiency of an object.");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -737,9 +738,7 @@ namespace CShapPractise
                         double enps_ET_ = enps_EO_ / enps_TE_;
                         double enps_ET2_ = enps_ET_ * 100;
                         Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
-                        powers_ enps_Xenum65 = powers_.add;
-                        Console.Write(enps_Xenum65);
-                        Console.Read();
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
