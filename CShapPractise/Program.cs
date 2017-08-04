@@ -663,7 +663,7 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your time");
                             double enps_64t = Convert.ToDouble(Console.ReadLine());
                             double enps_TOT64 = enps_64v + enps_64a * enps_64t;
-                            Console.WriteLine("Your total is "+enps_TOT64);
+                            Console.WriteLine("Your total is " + enps_TOT64);
                             Console.ReadKey();
                         }
                         else if (enps_xANS == 2)
@@ -711,7 +711,7 @@ namespace CShapPractise
                             double enps_x128vMULTenps_x128v = enps_x128v * enps_x128v;
                             double enps_x128aMULTenps_x128s = enps_x128a * enps_x128s;
                             double enps_x120TOT = enps_x128vMULTenps_x128v + 2 * enps_x128aMULTenps_x128s;
-                            Console.WriteLine("Your total is " + enps_x120TOT+"^2");
+                            Console.WriteLine("Your total is " + enps_x120TOT + "^2");
                             Console.ReadLine();
                         }
                         else if (enps_xANS == 5)
@@ -730,6 +730,9 @@ namespace CShapPractise
                             Console.WriteLine("Your total is " + enps_x255TOT);
                             Console.ReadLine();
                         }
+                    }
+                    else if (useranswer3 == 15) {
+                        Console.WriteLine("You have chosen to work out the efficiency of an object");
                     }
                     else if (useranswer3 == 2)
                     {
