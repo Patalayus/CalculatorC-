@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
-
-
 namespace CShapPractise
 {
     class Program
@@ -733,13 +731,13 @@ namespace CShapPractise
                         }
                     }
                     else if (useranswer3 == 15) {
-                        Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out.");
+                        Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out in joules.");
                         double enps_EO_ = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("Please give your theoretical total for energy output.");
+                        Console.WriteLine("Please give your theoretical total for energy output in joules.");
                         double enps_TE_ = Convert.ToDouble(Console.ReadLine());
                         double enps_ET_ = enps_EO_ / enps_TE_;
                         double enps_ET2_ = enps_ET_ * 100;
-                        Console.WriteLine("Your efficiency is " + enps_ET2_ + "J");
+                        Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
                         Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
