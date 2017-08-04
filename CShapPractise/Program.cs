@@ -732,7 +732,10 @@ namespace CShapPractise
                         }
                     }
                     else if (useranswer3 == 15) {
-                        Console.WriteLine("You have chosen to work out the efficiency of an object");
+                        Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out");
+                        double enps_EO_ = Convert.ToDouble(Console.ReadLine());
+
+                        
                     }
                     else if (useranswer3 == 2)
                     {
