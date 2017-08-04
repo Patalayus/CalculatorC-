@@ -9,7 +9,7 @@ namespace CShapPractise
 {
     class Program
     {
-        
+        enum powers_ { mult, sub, add, div };
         public void secondary()
         {
             Console.WriteLine("This is the secondary subroutine");
@@ -26,7 +26,6 @@ namespace CShapPractise
             // this subroutine adds two numbers and multiplies the two numbers
         }
         static void Main(string[] args)
-
         {
             en3x_1:
             Console.WriteLine("What do you wish to do?");
@@ -738,7 +737,9 @@ namespace CShapPractise
                         double enps_ET_ = enps_EO_ / enps_TE_;
                         double enps_ET2_ = enps_ET_ * 100;
                         Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
-                        Console.ReadKey();
+                        powers_ enps_Xenum65 = powers_.add;
+                        Console.Write(enps_Xenum65);
+                        Console.Read();
                     }
                     else if (useranswer3 == 2)
                     {
