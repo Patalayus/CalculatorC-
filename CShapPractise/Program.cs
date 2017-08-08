@@ -354,6 +354,7 @@ namespace CShapPractise
                     Console.WriteLine("13. Work out the velocity of a wave given the frequency and wavelength");
                     Console.WriteLine("14. SUVAT");
                     Console.WriteLine("15. Work out efficiency of an object.");
+                    Console.WriteLine("16. Work out the current of a circuit in amps.");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
