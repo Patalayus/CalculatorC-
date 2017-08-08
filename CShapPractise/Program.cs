@@ -750,7 +750,8 @@ namespace CShapPractise
                         Console.WriteLine("Please give your time");
                         double enps_x645T = Convert.ToInt64(Console.ReadLine());
                         double enps_x645AL = enps_x645C / enps_x645T;
-                        
+                        Console.WriteLine("Your total is " + enps_x645AL + "A");
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
