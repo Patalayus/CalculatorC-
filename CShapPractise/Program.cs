@@ -519,7 +519,7 @@ namespace CShapPractise
                         float R = Convert.ToInt64(Console.ReadLine());
                         float V = I * R;
                         enps_x86U enp = enps_x86U.V;
-                        Console.WriteLine("Your voltage is " +V+ enp );
+                        Console.WriteLine("Your voltage is " + V + enp);
                         Console.ReadKey();
                         //prints out voltage
                     }
@@ -645,7 +645,8 @@ namespace CShapPractise
                         Console.WriteLine("Your total is " + enps_xfMULTenps_xλ + "m/s^-1");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 14) {
+                    else if (useranswer3 == 14)
+                    {
                         /// v=u+at
                         /// s=u*t+1/2*at^2
                         /// s=1/2*(u+v)*t
@@ -732,7 +733,8 @@ namespace CShapPractise
                             Console.ReadLine();
                         }
                     }
-                    else if (useranswer3 == 15) {
+                    else if (useranswer3 == 15)
+                    {
                         Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out in joules.");
                         double enps_EO_ = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your theoretical total for energy output in joules.");
@@ -741,6 +743,14 @@ namespace CShapPractise
                         double enps_ET2_ = enps_ET_ * 100;
                         Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
                         Console.ReadKey();
+                    }
+                    else if (useranswer3 == 16) {
+                        Console.WriteLine("You have chosen to work out the current in a circuit\nPlease give your charge");
+                        double enps_x645C = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Please give your time");
+                        double enps_x645T = Convert.ToInt64(Console.ReadLine());
+                        double enps_x645AL = enps_x645C / enps_x645T;
+                        
                     }
                     else if (useranswer3 == 2)
                     {
