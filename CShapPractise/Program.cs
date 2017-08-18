@@ -798,7 +798,8 @@ namespace CShapPractise
                         Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
                         double enps_xd1 = Convert.ToDouble(Console.ReadLine());
                         double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
-                        Console.WriteLine("")
+                        Console.WriteLine("Your total work done is "+enps_xf1MULTxd1+"J");
+                        Console.ReadKey();
                     }
                     else if (useranswer3 == 2)
                     {
