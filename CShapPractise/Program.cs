@@ -356,6 +356,7 @@ namespace CShapPractise
                     Console.WriteLine("15. Work out efficiency of an object.");
                     Console.WriteLine("16. Work out the current of a circuit in amps.");
                     Console.WriteLine("17. Work out the speed of an object");
+                    Console.WriteLine("18. Work out the work done of an object");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
