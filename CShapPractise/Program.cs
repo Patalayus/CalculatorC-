@@ -790,7 +790,12 @@ namespace CShapPractise
                             Console.ReadKey();
                         }
                         else if (useranswer3 == 18) {
-                            Console.WriteLine("You have chosen to");
+                            Console.WriteLine("You have chosen to work out the work done of an object");
+                            Console.WriteLine("Please give your force applied to the object in newtons.");
+                            double enps_xf1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force.");
+                            double enps_xd1 = Convert.ToDouble(Console.ReadLine());
+
                         }
                     }
                     else if (useranswer3 == 2)
