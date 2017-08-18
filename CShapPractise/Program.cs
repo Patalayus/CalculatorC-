@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -355,6 +355,7 @@ namespace CShapPractise
                     Console.WriteLine("14. SUVAT");
                     Console.WriteLine("15. Work out efficiency of an object.");
                     Console.WriteLine("16. Work out the current of a circuit in amps.");
+                    Console.WriteLine("17. Work out the speed of an object");
                     //option menu 2
 
                     float useranswer3 = Convert.ToInt32(Console.ReadLine());
@@ -752,6 +753,41 @@ namespace CShapPractise
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
+                    }
+                    else if(useranswer3 == 17){
+                        Console.WriteLine("You have chosen to work out the speed of an object");
+                        Console.WriteLine("Please specify which equation you want to use\n1.S=D/T\n2.T=D/S\n3.D=SxT");
+                        double enps_SDT1 = Convert.ToDouble(Console.ReadLine());
+                        if(enps_SDT1 == 1){
+                            Console.WriteLine("You have chosen to work out the speed of a object");
+                            Console.WriteLine("Please declare your distance");
+                            double enps_D1 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Please declare your time");
+                            double enps_T1 = Convert.ToDouble(Console.ReadLine());
+                            double enps_S1 = enps_D1 / enps_T1;
+                            Console.WriteLine("Your speed is "+enps_S1);
+                            Console.ReadKey();
+                        }
+                        if (enps_SDT1 == 2){
+                            Console.WriteLine("You have chosen to work out the time for an object to cover a distance");
+                            Console.WriteLine("Please declare your distance");
+                            double enps_D2 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Please declare your time");
+                            double enps_S1 = Convert.ToDouble(Console.ReadLine());
+                            double enps_T2 = enps_D2 / enps_S1;
+                            Console.WriteLine("Your time is "+enps_T2);
+                            Console.ReadKey();
+                        }
+                        if (enps_SDT1 == 3){
+                            Console.WriteLine("You have chosen to work out the distance an object will travel");
+                            Console.WriteLine("Please declare your speed");
+                            double enps_S3 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Please declare your time");
+                            double enps_T3 = Convert.ToDouble(Console.ReadLine());
+                            double enps_D3 = enps_S3 * enps_T3;
+                            Console.WriteLine("Your total distance is "+enps_D3);
+                            Console.ReadKey();
+                        }
                     }
                     else if (useranswer3 == 2)
                     {
