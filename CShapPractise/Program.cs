@@ -788,15 +788,17 @@ namespace CShapPractise
                             double enps_D3 = enps_S3 * enps_T3;
                             Console.WriteLine("Your total distance is " + enps_D3);
                             Console.ReadKey();
-                        }
-                        else if (useranswer3 == 18) {
-                            Console.WriteLine("You have chosen to work out the work done of an object");
-                            Console.WriteLine("Please give your force applied to the object in newtons.");
-                            double enps_xf1 = Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force.");
-                            double enps_xd1 = Convert.ToDouble(Console.ReadLine());
-
-                        }
+                        }   
+                    }
+                    else if (useranswer3 == 18)
+                    {
+                        Console.WriteLine("You have chosen to work out the work done of an object");
+                        Console.WriteLine("Please give your force applied to the object in newtons.");
+                        double enps_xf1 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
+                        double enps_xd1 = Convert.ToDouble(Console.ReadLine());
+                        double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
+                        Console.WriteLine("")
                     }
                     else if (useranswer3 == 2)
                     {
