@@ -778,15 +778,18 @@ namespace CShapPractise
                             Console.WriteLine("Your time is "+enps_T2);
                             Console.ReadKey();
                         }
-                        if (enps_SDT1 == 3){
+                        if (enps_SDT1 == 3) {
                             Console.WriteLine("You have chosen to work out the distance an object will travel");
                             Console.WriteLine("Please declare your speed");
                             double enps_S3 = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please declare your time");
                             double enps_T3 = Convert.ToDouble(Console.ReadLine());
                             double enps_D3 = enps_S3 * enps_T3;
-                            Console.WriteLine("Your total distance is "+enps_D3);
+                            Console.WriteLine("Your total distance is " + enps_D3);
                             Console.ReadKey();
+                        }
+                        else if (useranswer3 == 18) {
+                            Console.WriteLine("You have chosen to");
                         }
                     }
                     else if (useranswer3 == 2)
