@@ -806,12 +806,12 @@ namespace CShapPractise
                         Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
                         Console.ReadKey();
                     }
-                    else if ((useranswer3 != "1") || (useranswer3 != "2") || (useranswer3 != "3") || 
-                        (useranswer3 != "4") || (useranswer3 != "5") || (useranswer3 != "6") 
-                        ||(useranswer3 != "2") || (useranswer3 != "2") || (useranswer3 != "9") || 
-                        (useranswer3 != "10") || (useranswer3 != "11") || (useranswer3 != "12")
-                        || (useranswer3 != "13") || (useranswer3 != "14") || (useranswer3 != "15") || 
-                        (useranswer3 != "16") || (useranswer3 != "17") || (useranswer3 != "18"))
+                    else if ((useranswer3 != "1") && (useranswer3 != "2") && (useranswer3 != "3") && 
+                        (useranswer3 != "4") && (useranswer3 != "5") && (useranswer3 != "6") 
+                        &&(useranswer3 != "2") && (useranswer3 != "2") && (useranswer3 != "9") && 
+                        (useranswer3 != "10") && (useranswer3 != "11") && (useranswer3 != "12")
+                        && (useranswer3 != "13") && (useranswer3 != "14") && (useranswer3 != "15") && 
+                        (useranswer3 != "16") && (useranswer3 != "17") && (useranswer3 != "18"))
                     {
                         Console.WriteLine("Please enter a valid input.");
                         Console.ReadKey();
