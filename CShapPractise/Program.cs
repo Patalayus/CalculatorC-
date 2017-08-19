@@ -359,8 +359,8 @@ namespace CShapPractise
                     Console.WriteLine("18. Work out the work done of an object");
                     //option menu 2
 
-                    float useranswer3 = Convert.ToInt32(Console.ReadLine());
-                    if (useranswer3 == 1)
+                    string useranswer3 = Console.ReadLine();
+                    if (useranswer3 == "1")
                     {
                         Console.Write("Please enter your A:"); int A = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Please enter your B:"); int B = Convert.ToInt32(Console.ReadLine());
@@ -386,7 +386,7 @@ namespace CShapPractise
                         Console.Write("Your negative x is: " + bottom2);
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 2)
+                    else if (useranswer3 == "2")
                     {
                         Console.Write("Please enter your first Y:"); Console.WriteLine(); float y2 = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Please enter your second Y: "); Console.WriteLine();
@@ -404,7 +404,7 @@ namespace CShapPractise
                         Console.WriteLine(grad);
                         Console.ReadLine();
                     }
-                    else if (useranswer3 == 3)
+                    else if (useranswer3 == "3")
                     {
                         Console.WriteLine("Please enter your radius in meters"); float radius1 = Convert.ToInt32(Console.ReadLine());
                         //the formula for the circumference  = 2x3.141592654xr
@@ -412,7 +412,7 @@ namespace CShapPractise
                         Console.WriteLine("Your radius is " + circum + " m");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 4)
+                    else if (useranswer3 == "4")
                     {
                         Console.WriteLine("Please enter your radius in meters"); float radius2 = Convert.ToInt32(Console.ReadLine());
                         // the formula for the area of a circle = 3.141592654xr^2
@@ -420,7 +420,7 @@ namespace CShapPractise
                         float area = Convert.ToInt32(3.141592654 * squaredradius);
                         Console.WriteLine("Your area is " + radius2 + " m^2"); Console.ReadLine();
                     }
-                    else if (useranswer3 == 5)
+                    else if (useranswer3 == "5")
                     {
                         Console.WriteLine("Please define your constant "); float constant = Convert.ToInt64(Console.ReadLine());
                         ///this is the differentiation of sin(x)#
@@ -502,7 +502,7 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out calculation
                     }
-                    else if (useranswer3 == 6)
+                    else if (useranswer3 == "6")
                     {
                         Console.WriteLine("Please enter your mass");
                         float M = Convert.ToInt64(Console.ReadLine());
@@ -513,7 +513,7 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out momentum of object
                     }
-                    else if (useranswer3 == 7)
+                    else if (useranswer3 == "7")
                     {
                         Console.WriteLine("Please enter your current in amps");
                         float I = Convert.ToInt64(Console.ReadLine());
@@ -525,7 +525,7 @@ namespace CShapPractise
                         Console.ReadKey();
                         //prints out voltage
                     }
-                    else if (useranswer3 == 8)
+                    else if (useranswer3 == "8")
                     {
                         Console.WriteLine("You have chosen to work out the volume of a cylinder.");
                         Console.WriteLine("Do you have an area or a radius?");
@@ -559,7 +559,7 @@ namespace CShapPractise
                             //works out volume from radius
                         }
                     }
-                    else if (useranswer3 == 9)
+                    else if (useranswer3 == "9")
                     ///F = KX = Hooke's
                     ///F = MG
                     ///Strain = X / L
@@ -590,7 +590,7 @@ namespace CShapPractise
                         Console.ReadKey();
                         //Final Calculation = Total print
                     }
-                    else if (useranswer3 == 10)
+                    else if (useranswer3 == "10")
                     {
                         Console.WriteLine("You have chosen to work out the energy of a moving object.");
                         //E=1/2*M(V^2)
@@ -607,7 +607,7 @@ namespace CShapPractise
                         Console.WriteLine("The energy of your moving object is " + en1ps_x_05MULTen2ps_x62 + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 11)
+                    else if (useranswer3 == "11")
                     {
                         Console.WriteLine("You have chosen to work out the power of a circuit.");
                         Console.WriteLine("Please state your voltage.");
@@ -619,7 +619,7 @@ namespace CShapPractise
                         Console.WriteLine("Your power in watts is " + enpsx_0MULTenpsx_01 + "W");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 12)
+                    else if (useranswer3 == "12")
                     {
                         //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
@@ -634,7 +634,7 @@ namespace CShapPractise
                         Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 13)
+                    else if (useranswer3 == "13")
                     {
                         //V=fλ
                         Console.WriteLine("You have chosen to work out the velocity of a wave");
@@ -647,7 +647,7 @@ namespace CShapPractise
                         Console.WriteLine("Your total is " + enps_xfMULTenps_xλ + "m/s^-1");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 14)
+                    else if (useranswer3 == "14")
                     {
                         /// v=u+at
                         /// s=u*t+1/2*at^2
@@ -735,7 +735,7 @@ namespace CShapPractise
                             Console.ReadLine();
                         }
                     }
-                    else if (useranswer3 == 15)
+                    else if (useranswer3 == "15")
                     {
                         Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out in joules.");
                         double enps_EO_ = Convert.ToDouble(Console.ReadLine());
@@ -746,7 +746,8 @@ namespace CShapPractise
                         Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 16) {
+                    else if (useranswer3 == "16")
+                    {
                         Console.WriteLine("You have chosen to work out the current in a circuit\nPlease give your charge in coulombs");
                         double enps_x645C = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your time in seconds");
@@ -755,31 +756,35 @@ namespace CShapPractise
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
                     }
-                    else if(useranswer3 == 17){
+                    else if (useranswer3 == "17")
+                    {
                         Console.WriteLine("You have chosen to work out the speed of an object");
                         Console.WriteLine("Please specify which equation you want to use\n1.S=D/T\n2.T=D/S\n3.D=SxT");
                         double enps_SDT1 = Convert.ToDouble(Console.ReadLine());
-                        if(enps_SDT1 == 1){
+                        if (enps_SDT1 == 1)
+                        {
                             Console.WriteLine("You have chosen to work out the speed of a object");
                             Console.WriteLine("Please declare your distance");
                             double enps_D1 = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please declare your time");
                             double enps_T1 = Convert.ToDouble(Console.ReadLine());
                             double enps_S1 = enps_D1 / enps_T1;
-                            Console.WriteLine("Your speed is "+enps_S1);
+                            Console.WriteLine("Your speed is " + enps_S1);
                             Console.ReadKey();
                         }
-                        if (enps_SDT1 == 2){
+                        if (enps_SDT1 == 2)
+                        {
                             Console.WriteLine("You have chosen to work out the time for an object to cover a distance");
                             Console.WriteLine("Please declare your distance");
                             double enps_D2 = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please declare your time");
                             double enps_S1 = Convert.ToDouble(Console.ReadLine());
                             double enps_T2 = enps_D2 / enps_S1;
-                            Console.WriteLine("Your time is "+enps_T2);
+                            Console.WriteLine("Your time is " + enps_T2);
                             Console.ReadKey();
                         }
-                        if (enps_SDT1 == 3) {
+                        if (enps_SDT1 == 3)
+                        {
                             Console.WriteLine("You have chosen to work out the distance an object will travel");
                             Console.WriteLine("Please declare your speed");
                             double enps_S3 = Convert.ToDouble(Console.ReadLine());
@@ -788,9 +793,9 @@ namespace CShapPractise
                             double enps_D3 = enps_S3 * enps_T3;
                             Console.WriteLine("Your total distance is " + enps_D3);
                             Console.ReadKey();
-                        }   
+                        }
                     }
-                    else if (useranswer3 == 18)
+                    else if (useranswer3 == "18")
                     {
                         Console.WriteLine("You have chosen to work out the work done of an object");
                         Console.WriteLine("Please give your force applied to the object in newtons.");
@@ -798,10 +803,118 @@ namespace CShapPractise
                         Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
                         double enps_xd1 = Convert.ToDouble(Console.ReadLine());
                         double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
-                        Console.WriteLine("Your total work done is "+enps_xf1MULTxd1+"J");
+                        Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 == 2)
+                    else if (useranswer3 != "1")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "2")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "3")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "4")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "5")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "6")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "7")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "8")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "9")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "10")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "11")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "12")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "13")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "14")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "15")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "16")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "17")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 != "18")
+                    {
+                        Console.WriteLine("Please enter a valid input.");
+                        Console.ReadKey();
+                        goto en3x_1;
+                    }
+                    else if (useranswer3 == "2")
                     {
                         goto en3x_1;
                     }
