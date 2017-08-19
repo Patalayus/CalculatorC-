@@ -755,7 +755,6 @@ namespace CShapPractise
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
-
                     }
                     else if (useranswer3 == "17")
                     {
@@ -807,109 +806,12 @@ namespace CShapPractise
                         Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
                         Console.ReadKey();
                     }
-                    else if (useranswer3 != "1")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "2")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "3")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "4")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "5")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "6")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "7")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "8")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "9")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "10")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "11")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "12")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "13")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "14")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "15")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "16")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "17")
-                    {
-                        Console.WriteLine("Please enter a valid input.");
-                        Console.ReadKey();
-                        goto en3x_1;
-                    }
-                    else if (useranswer3 != "18")
+                    else if ((useranswer3 != "1") || (useranswer3 != "2") || (useranswer3 != "3") || 
+                        (useranswer3 != "4") || (useranswer3 != "5") || (useranswer3 != "6") 
+                        ||(useranswer3 != "2") || (useranswer3 != "2") || (useranswer3 != "9") || 
+                        (useranswer3 != "10") || (useranswer3 != "11") || (useranswer3 != "12")
+                        || (useranswer3 != "13") || (useranswer3 != "14") || (useranswer3 != "15") || 
+                        (useranswer3 != "16") || (useranswer3 != "17") || (useranswer3 != "18"))
                     {
                         Console.WriteLine("Please enter a valid input.");
                         Console.ReadKey();
