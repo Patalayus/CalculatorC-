@@ -755,6 +755,7 @@ namespace CShapPractise
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
+
                     }
                     else if (useranswer3 == "17")
                     {
