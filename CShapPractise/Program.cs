@@ -751,7 +751,7 @@ namespace CShapPractise
                         Console.WriteLine("You have chosen to work out the current in a circuit\nPlease give your charge in coulombs");
                         double enps_x645C = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Please give your time in seconds");
-                        double enps_x645T = Convert.ToInt64(Console.ReadLine());
+                        double enps_x645T = Convert.ToDouble(Console.ReadLine());
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
