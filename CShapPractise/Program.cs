@@ -764,6 +764,7 @@ namespace CShapPractise
                         if (enps_SDT1 == 1)
                         {
                             double enps_D1;
+                            double enps_T1;
                             Console.WriteLine("You have chosen to work out the speed of a object");
                             Console.WriteLine("Please declare your distance");
                             enps_start17:
@@ -772,7 +773,11 @@ namespace CShapPractise
                                 goto enps_start17;
                             }
                             Console.WriteLine("Please declare your time");
-                            double enps_T1 = Convert.ToDouble(Console.ReadLine());
+                            enps_mid17:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_T1)) {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_mid17;
+                            }
                             double enps_S1 = enps_D1 / enps_T1;
                             Console.WriteLine("Your speed is " + enps_S1);
                             Console.ReadKey();
