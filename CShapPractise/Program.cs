@@ -792,22 +792,42 @@ namespace CShapPractise
                         }
                         if (enps_SDT1 == 2)
                         {
+                            double enps_D2;
+                            double enps_S1;
                             Console.WriteLine("You have chosen to work out the time for an object to cover a distance");
                             Console.WriteLine("Please declare your distance");
-                            double enps_D2 = Convert.ToDouble(Console.ReadLine());
+                            enps_17_3_1:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_D2))
+                            { Console.WriteLine("Please enter a valid input");
+                                goto enps_17_3_1;
+                            }
                             Console.WriteLine("Please declare your time");
-                            double enps_S1 = Convert.ToDouble(Console.ReadLine());
+                            enps_17_3_2:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_S1)) {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_17_3_2;
+                            }
                             double enps_T2 = enps_D2 / enps_S1;
                             Console.WriteLine("Your time is " + enps_T2);
                             Console.ReadKey();
                         }
                         if (enps_SDT1 == 3)
                         {
+                            double enps_S3;
+                            double enps_T3;
                             Console.WriteLine("You have chosen to work out the distance an object will travel");
                             Console.WriteLine("Please declare your speed");
-                            double enps_S3 = Convert.ToDouble(Console.ReadLine());
+                            enps_17start1:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_S3)) {
+                                Console.WriteLine("Please give a valid input");
+                                goto enps_17start1;
+                            }
                             Console.WriteLine("Please declare your time");
-                            double enps_T3 = Convert.ToDouble(Console.ReadLine());
+                            enps_17mid1:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_T3)) {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_17mid1;
+                            }
                             double enps_D3 = enps_S3 * enps_T3;
                             Console.WriteLine("Your total distance is " + enps_D3);
                             Console.ReadKey();
