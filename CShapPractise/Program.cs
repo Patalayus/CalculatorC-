@@ -748,10 +748,18 @@ namespace CShapPractise
                     }
                     else if (useranswer3 == "16")
                     {
+                        double enps_x645C;
+                        double enps_x645T;
                         Console.WriteLine("You have chosen to work out the current in a circuit\nPlease give your charge in coulombs");
-                        double enps_x645C = Convert.ToDouble(Console.ReadLine());
+                        enps_start183:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_x645C))
+                        { Console.WriteLine("Please enter a valid input");
+                            goto enps_start183;
+                        }
                         Console.WriteLine("Please give your time in seconds");
-                        double enps_x645T = Convert.ToDouble(Console.ReadLine());
+                        enps_mid423:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_x645T))
+                    { Console.WriteLine("Please enter a valid input");goto enps_mid423; }
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
@@ -824,7 +832,7 @@ namespace CShapPractise
                             Console.WriteLine("Please enter a valid input");
                             goto enps_secondaryinput_X;
                         }
-                        //needs to be converted to double variable
+                        //converted to double variable
                         Console.WriteLine("Entries converted");
                         double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
                         Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
