@@ -737,10 +737,20 @@ namespace CShapPractise
                     }
                     else if (useranswer3 == "15")
                     {
+                        double enps_EO_;
+                        double enps_TE_;
                         Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out in joules.");
-                        double enps_EO_ = Convert.ToDouble(Console.ReadLine());
+                        enps_16_1:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_EO_)) {
+                            Console.WriteLine("Please enter a vaild input");
+                            goto enps_16_1;
+                        }
                         Console.WriteLine("Please give your theoretical total for energy output in joules.");
-                        double enps_TE_ = Convert.ToDouble(Console.ReadLine());
+                        enps_16_2:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_TE_)) {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_16_2;
+                        }
                         double enps_ET_ = enps_EO_ / enps_TE_;
                         double enps_ET2_ = enps_ET_ * 100;
                         Console.WriteLine("Your efficiency is " + enps_ET2_ + "%");
