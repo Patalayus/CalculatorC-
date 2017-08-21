@@ -797,15 +797,21 @@ namespace CShapPractise
                     }
                     else if (useranswer3 == "18")
                     {
+                        double enps_xf1;
                         Console.WriteLine("You have chosen to work out the work done of an object");
                         Console.WriteLine("Please give your force applied to the object in newtons.");
-                        string enps_xf1 = Console.ReadLine();
+                        //string enps_xf1 = Console.ReadLine();
+                        enps_start18:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_xf1))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_start18;
+                        }
                         Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
-                        string enps_xd1 = Console.ReadLine();
+                        double enps_xd1 = Convert.ToDouble(Console.ReadLine());
                         //converted to string
 
-
-
+                        
                         //needs to be converted to double variable
                         Console.WriteLine("Entries converted");
                         double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
