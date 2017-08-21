@@ -799,9 +799,15 @@ namespace CShapPractise
                     {
                         Console.WriteLine("You have chosen to work out the work done of an object");
                         Console.WriteLine("Please give your force applied to the object in newtons.");
-                        double enps_xf1 = Convert.ToDouble(Console.ReadLine());
+                        string enps_xf1 = Console.ReadLine();
                         Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
-                        double enps_xd1 = Convert.ToDouble(Console.ReadLine());
+                        string enps_xd1 = Console.ReadLine();
+                        //converted to string
+
+
+
+                        //needs to be converted to double variable
+                        Console.WriteLine("Entries converted");
                         double enps_xf1MULTxd1 = enps_xf1 * enps_xd1;
                         Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
                         Console.ReadKey();
