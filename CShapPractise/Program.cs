@@ -720,13 +720,25 @@ namespace CShapPractise
                         }
                         else if (enps_xANS == 5)
                         {
+                            double enps_x255v;
+                            double enps_x255t;
+                            double enps_x255a;
                             Console.WriteLine("You have chosen s=vt-1/2*at^2");
                             Console.WriteLine("Please enter your final velocity");
-                            double enps_x255v = Convert.ToDouble(Console.ReadLine());
+                            enps_51:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x255v))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_51;
+                            }
                             Console.WriteLine("Please enter your time");
-                            double enps_x255t = Convert.ToDouble(Console.ReadLine());
+                            enps_52:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x255t))
+                            { Console.WriteLine("Please enter a valid input");goto enps_52; }
                             Console.WriteLine("Please enter your acceleration");
-                            double enps_x255a = Convert.ToDouble(Console.ReadLine());
+                            enps_53:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x255a))
+                            { Console.WriteLine("Please enter a valid input");goto enps_53; }
                             //s=vt-1/2*at^2
                             double enps_vMULTt = enps_x255v * enps_x255t;
                             double enps_tMULTt = enps_x255t * enps_x255t;
