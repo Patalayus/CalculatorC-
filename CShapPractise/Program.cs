@@ -699,8 +699,7 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your final velocity");
                             enps_32:
                             while (!Double.TryParse(Console.ReadLine(), out enps_x86VEL)) {
-                                Console.WriteLine(""); goto enps_32;
-                            }
+                                Console.WriteLine("Please enter your final velocity"); goto enps_32; }
                             Console.WriteLine("Please enter your time");
                             enps_33:
                             while (!Double.TryParse(Console.ReadLine(), out enps_x86TIM))
