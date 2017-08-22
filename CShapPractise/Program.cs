@@ -706,6 +706,7 @@ namespace CShapPractise
                         {
                             double enps_x128v;
                             double enps_x128a;
+                            double enps_x128s;
                             Console.WriteLine("You have chosen v^2=u^2+2*as");
                             Console.WriteLine("Please enter your initial velocity");
                             enps_41:
@@ -716,7 +717,9 @@ namespace CShapPractise
                             while (!Double.TryParse(Console.ReadLine(), out enps_x128a))
                             { Console.WriteLine("Please enter a valid input"); goto enps_42; }
                             Console.WriteLine("Please enter your displacement");
-                            double enps_x128s = Convert.ToDouble(Console.ReadLine());
+                            enps_43:
+                            while (!Double.TryParse(Console.ReadLine(),out enps_x128s))
+                            { Console.WriteLine("Please enter a valid input"); goto enps_43; }
                             //v^2=u^2+2*as
                             double enps_x128vMULTenps_x128v = enps_x128v * enps_x128v;
                             double enps_x128aMULTenps_x128s = enps_x128a * enps_x128s;
