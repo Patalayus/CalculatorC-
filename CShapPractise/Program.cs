@@ -698,11 +698,13 @@ namespace CShapPractise
                             { Console.WriteLine("Please enter a valid input"); goto enps_31; }
                             Console.WriteLine("Please enter your final velocity");
                             enps_32:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_x86VE)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x86VEL)) {
                                 Console.WriteLine(""); goto enps_32;
                             }
                             Console.WriteLine("Please enter your time");
-                            double enps_x86TIM = Convert.ToDouble(Console.ReadLine());
+                            enps_33:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x86TIM))
+                            { Console.WriteLine("Please enter a valid input");goto enps_33; }
                             double enps_x86uADDv = enps_x86INI + enps_x86VEL;
                             double enps_x86TOT = 0.5 * enps_x86uADDv;
                             double enps_x86TOTvP2 = enps_x86uADDv * enps_x86TIM;
