@@ -674,6 +674,7 @@ namespace CShapPractise
                         {
                             double enps_32v;
                             double enps_32t;
+                            double enps_32a;
                             Console.WriteLine("You have chosen s=u*t+1/2*at^2");
                             Console.WriteLine("Please enter your initial velocity");
                             enps_21:
@@ -689,7 +690,12 @@ namespace CShapPractise
                                 goto enps_22;
                             }
                             Console.WriteLine("Please enter your acceleration");
-                            double enps_32a = Convert.ToDouble(Console.ReadLine());
+                            enps_23:
+                            while (!Double.TryParse(Console.ReadLine(),out enps_32a))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_23;
+                            }
                             // s=u*t+1/2*at^2
                             double enps_uMULTt = enps_32v * enps_32t;
                             double enps_tA2 = enps_32t * enps_32t;
