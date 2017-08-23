@@ -659,9 +659,14 @@ namespace CShapPractise
                         int enps_xANS = Convert.ToInt32(Console.ReadLine());
                         if (enps_xANS == 1)
                         {
+                            double enps_64v;
                             Console.WriteLine("You have chosen v=u+at");
                             Console.WriteLine("Please enter your initial velocity");
-                            double enps_64v = Convert.ToDouble(Console.ReadLine());
+                            enps_11:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_64v))
+                            { Console.WriteLine("Please enter a vaild input");
+                                goto enps_11;
+                            }
                             Console.WriteLine("Please enter your acceleration");
                             double enps_64a = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Please enter your time");
