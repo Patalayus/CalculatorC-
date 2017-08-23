@@ -684,15 +684,13 @@ namespace CShapPractise
                             }
                             Console.WriteLine("Please enter your time");
                             enps_22:
-                            while(!Double.TryParse(Console.ReadLine(),out enps_32t))
-                            {
+                            while(!Double.TryParse(Console.ReadLine(),out enps_32t)) {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_22;
                             }
                             Console.WriteLine("Please enter your acceleration");
                             enps_23:
-                            while (!Double.TryParse(Console.ReadLine(),out enps_32a))
-                            {
+                            while (!Double.TryParse(Console.ReadLine(),out enps_32a)) {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_23;
                             }
