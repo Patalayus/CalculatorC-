@@ -357,6 +357,7 @@ namespace CShapPractise
                     Console.WriteLine("16. Work out the current of a circuit in amps.");
                     Console.WriteLine("17. Work out the speed of an object");
                     Console.WriteLine("18. Work out the work done of an object");
+                    Console.WriteLine("19. Work out the wattage, current or voltage of a circuit");
                     //option menu 2
 
                     string useranswer3 = Console.ReadLine();
@@ -665,14 +666,16 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your initial velocity");
                             enps_11:
                             while (!Double.TryParse(Console.ReadLine(), out enps_64v))
-                            { Console.WriteLine("Please enter a vaild input");
+                            {
+                                Console.WriteLine("Please enter a vaild input");
                                 goto enps_11;
                             }
                             double enps_64a;
                             Console.WriteLine("Please enter your acceleration");
                             enps_12:
                             while (!Double.TryParse(Console.ReadLine(), out enps_64a))
-                            { Console.WriteLine("Please enter a valid input");
+                            {
+                                Console.WriteLine("Please enter a valid input");
                                 goto enps_12;
                             }
                             Console.WriteLine("Please enter your time");
@@ -694,19 +697,22 @@ namespace CShapPractise
                             Console.WriteLine("You have chosen s=u*t+1/2*at^2");
                             Console.WriteLine("Please enter your initial velocity");
                             enps_21:
-                            while(!Double.TryParse(Console.ReadLine(),out enps_32v)){
+                            while (!Double.TryParse(Console.ReadLine(), out enps_32v))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_21;
                             }
                             Console.WriteLine("Please enter your time");
                             enps_22:
-                            while(!Double.TryParse(Console.ReadLine(),out enps_32t)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_32t))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_22;
                             }
                             Console.WriteLine("Please enter your acceleration");
                             enps_23:
-                            while (!Double.TryParse(Console.ReadLine(),out enps_32a)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_32a))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_23;
                             }
@@ -729,12 +735,14 @@ namespace CShapPractise
                             { Console.WriteLine("Please enter a valid input"); goto enps_31; }
                             Console.WriteLine("Please enter your final velocity");
                             enps_32:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_x86VEL)) {
-                                Console.WriteLine("Please enter your final velocity"); goto enps_32; }
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x86VEL))
+                            {
+                                Console.WriteLine("Please enter your final velocity"); goto enps_32;
+                            }
                             Console.WriteLine("Please enter your time");
                             enps_33:
                             while (!Double.TryParse(Console.ReadLine(), out enps_x86TIM))
-                            { Console.WriteLine("Please enter a valid input");goto enps_33; }
+                            { Console.WriteLine("Please enter a valid input"); goto enps_33; }
                             double enps_x86uADDv = enps_x86INI + enps_x86VEL;
                             double enps_x86TOT = 0.5 * enps_x86uADDv;
                             double enps_x86TOTvP2 = enps_x86uADDv * enps_x86TIM;
@@ -758,7 +766,7 @@ namespace CShapPractise
                             { Console.WriteLine("Please enter a valid input"); goto enps_42; }
                             Console.WriteLine("Please enter your displacement");
                             enps_43:
-                            while (!Double.TryParse(Console.ReadLine(),out enps_x128s))
+                            while (!Double.TryParse(Console.ReadLine(), out enps_x128s))
                             { Console.WriteLine("Please enter a valid input"); goto enps_43; }
                             //v^2=u^2+2*as
                             double enps_x128vMULTenps_x128v = enps_x128v * enps_x128v;
@@ -783,11 +791,11 @@ namespace CShapPractise
                             Console.WriteLine("Please enter your time");
                             enps_52:
                             while (!Double.TryParse(Console.ReadLine(), out enps_x255t))
-                            { Console.WriteLine("Please enter a valid input");goto enps_52; }
+                            { Console.WriteLine("Please enter a valid input"); goto enps_52; }
                             Console.WriteLine("Please enter your acceleration");
                             enps_53:
                             while (!Double.TryParse(Console.ReadLine(), out enps_x255a))
-                            { Console.WriteLine("Please enter a valid input");goto enps_53; }
+                            { Console.WriteLine("Please enter a valid input"); goto enps_53; }
                             //s=vt-1/2*at^2
                             double enps_vMULTt = enps_x255v * enps_x255t;
                             double enps_tMULTt = enps_x255t * enps_x255t;
@@ -802,13 +810,15 @@ namespace CShapPractise
                         double enps_TE_;
                         Console.WriteLine("You have chosen to work out the efficiency of an object\nPlease give theoretical useful energy out in joules.");
                         enps_16_1:
-                        while (!Double.TryParse(Console.ReadLine(), out enps_EO_)) {
+                        while (!Double.TryParse(Console.ReadLine(), out enps_EO_))
+                        {
                             Console.WriteLine("Please enter a vaild input");
                             goto enps_16_1;
                         }
                         Console.WriteLine("Please give your theoretical total for energy output in joules.");
                         enps_16_2:
-                        while (!Double.TryParse(Console.ReadLine(), out enps_TE_)) {
+                        while (!Double.TryParse(Console.ReadLine(), out enps_TE_))
+                        {
                             Console.WriteLine("Please enter a valid input");
                             goto enps_16_2;
                         }
@@ -824,13 +834,14 @@ namespace CShapPractise
                         Console.WriteLine("You have chosen to work out the current in a circuit\nPlease give your charge in coulombs");
                         enps_start183:
                         while (!Double.TryParse(Console.ReadLine(), out enps_x645C))
-                        { Console.WriteLine("Please enter a valid input");
+                        {
+                            Console.WriteLine("Please enter a valid input");
                             goto enps_start183;
                         }
                         Console.WriteLine("Please give your time in seconds");
                         enps_mid423:
                         while (!Double.TryParse(Console.ReadLine(), out enps_x645T))
-                    { Console.WriteLine("Please enter a valid input");goto enps_mid423; }
+                        { Console.WriteLine("Please enter a valid input"); goto enps_mid423; }
                         double enps_x645AL = enps_x645C / enps_x645T;
                         Console.WriteLine("Your total is " + enps_x645AL + "A");
                         Console.ReadKey();
@@ -847,13 +858,15 @@ namespace CShapPractise
                             Console.WriteLine("You have chosen to work out the speed of a object");
                             Console.WriteLine("Please declare your distance");
                             enps_start17:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_D1)){
+                            while (!Double.TryParse(Console.ReadLine(), out enps_D1))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_start17;
                             }
                             Console.WriteLine("Please declare your time");
                             enps_mid17:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_T1)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_T1))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_mid17;
                             }
@@ -869,12 +882,14 @@ namespace CShapPractise
                             Console.WriteLine("Please declare your distance");
                             enps_17_3_1:
                             while (!Double.TryParse(Console.ReadLine(), out enps_D2))
-                            { Console.WriteLine("Please enter a valid input");
+                            {
+                                Console.WriteLine("Please enter a valid input");
                                 goto enps_17_3_1;
                             }
                             Console.WriteLine("Please declare your time");
                             enps_17_3_2:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_S1)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_S1))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_17_3_2;
                             }
@@ -889,13 +904,15 @@ namespace CShapPractise
                             Console.WriteLine("You have chosen to work out the distance an object will travel");
                             Console.WriteLine("Please declare your speed");
                             enps_17start1:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_S3)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_S3))
+                            {
                                 Console.WriteLine("Please give a valid input");
                                 goto enps_17start1;
                             }
                             Console.WriteLine("Please declare your time");
                             enps_17mid1:
-                            while (!Double.TryParse(Console.ReadLine(), out enps_T3)) {
+                            while (!Double.TryParse(Console.ReadLine(), out enps_T3))
+                            {
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_17mid1;
                             }
@@ -919,7 +936,8 @@ namespace CShapPractise
                         }
                         Console.WriteLine("Please give your distance of which the object moved. Note that this distance is in the same direction of the force. Give distance in metres");
                         enps_secondaryinput_X:
-                        while (!Double.TryParse(Console.ReadLine(), out enps_xd1)) {
+                        while (!Double.TryParse(Console.ReadLine(), out enps_xd1))
+                        {
                             Console.WriteLine("Please enter a valid input");
                             goto enps_secondaryinput_X;
                         }
@@ -929,16 +947,21 @@ namespace CShapPractise
                         Console.WriteLine("Your total work done is " + enps_xf1MULTxd1 + "J");
                         Console.ReadKey();
                     }
-                    else if ((useranswer3 != "1") && (useranswer3 != "2") && (useranswer3 != "3") && 
-                        (useranswer3 != "4") && (useranswer3 != "5") && (useranswer3 != "6") 
-                        &&(useranswer3 != "2") && (useranswer3 != "2") && (useranswer3 != "9") && 
+                    else if ((useranswer3 != "1") && (useranswer3 != "2") && (useranswer3 != "3") &&
+                        (useranswer3 != "4") && (useranswer3 != "5") && (useranswer3 != "6")
+                        && (useranswer3 != "2") && (useranswer3 != "2") && (useranswer3 != "9") &&
                         (useranswer3 != "10") && (useranswer3 != "11") && (useranswer3 != "12")
-                        && (useranswer3 != "13") && (useranswer3 != "14") && (useranswer3 != "15") && 
+                        && (useranswer3 != "13") && (useranswer3 != "14") && (useranswer3 != "15") &&
                         (useranswer3 != "16") && (useranswer3 != "17") && (useranswer3 != "18"))
                     {
                         Console.WriteLine("Please enter a valid input.");
                         Console.ReadKey();
                         goto en3x_1;
+                    }
+                    else if (useranswer3 == "19")
+                    {
+                        Console.WriteLine("You have chosen to work out the wattage, current or voltage of a circuit");
+                        Console.WriteLine("Please specify which it is:\n1. Voltage\n2. Wattage\n3.Current");
                     }
                     else if (useranswer3 == "2")
                     {
