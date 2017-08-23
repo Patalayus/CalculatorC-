@@ -667,8 +667,13 @@ namespace CShapPractise
                             { Console.WriteLine("Please enter a vaild input");
                                 goto enps_11;
                             }
+                            double enps_64a;
                             Console.WriteLine("Please enter your acceleration");
-                            double enps_64a = Convert.ToDouble(Console.ReadLine());
+                            enps_12:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_64a))
+                            { Console.WriteLine("Please enter a valid input");
+                                goto enps_12;
+                            }
                             Console.WriteLine("Please enter your time");
                             double enps_64t = Convert.ToDouble(Console.ReadLine());
                             double enps_TOT64 = enps_64v + enps_64a * enps_64t;
