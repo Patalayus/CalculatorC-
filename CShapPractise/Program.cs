@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -672,11 +672,22 @@ namespace CShapPractise
                         }
                         else if (enps_xANS == 2)
                         {
+                            double enps_32v;
+                            double enps_32t;
                             Console.WriteLine("You have chosen s=u*t+1/2*at^2");
                             Console.WriteLine("Please enter your initial velocity");
-                            double enps_32v = Convert.ToDouble(Console.ReadLine());
+                            enps_21:
+                            while(!Double.TryParse(Console.ReadLine(),out enps_32v)){
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_21;
+                            }
                             Console.WriteLine("Please enter your time");
-                            double enps_32t = Convert.ToDouble(Console.ReadLine());
+                            enps_22:
+                            while(!Double.TryParse(Console.ReadLine(),out enps_32t))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_22;
+                            }
                             Console.WriteLine("Please enter your acceleration");
                             double enps_32a = Convert.ToDouble(Console.ReadLine());
                             // s=u*t+1/2*at^2
