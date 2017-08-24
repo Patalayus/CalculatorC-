@@ -962,6 +962,15 @@ namespace CShapPractise
                     {
                         Console.WriteLine("You have chosen to work out the wattage, current or voltage of a circuit");
                         Console.WriteLine("Please specify which it is:\n1. Voltage\n2. Wattage\n3.Current");
+                        if (useranswer3 == "1") {
+                            Console.WriteLine("You have chosen to work out the voltage of a circuit using wattage and current.");
+                        }
+                        if (useranswer3 == "2") {
+                            Console.WriteLine("You have chosen to work out the wattage of a circuit from the current and voltage.");
+                        }
+                        if (useranswer3 == "3") {
+                            Console.WriteLine("You have chosen to work out the current of a circuit from voltage and wattage.");
+                        }
                     }
                     else if (useranswer3 == "2")
                     {
