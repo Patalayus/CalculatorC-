@@ -981,6 +981,17 @@ namespace CShapPractise
                                 Console.WriteLine("Please enter a valid input");
                                 goto enps_191route;
                             }
+                            double enps_191current;
+                            enps_191currentroute:
+                            Console.WriteLine("Please enter your current in amps");
+                            while (!Double.TryParse(Console.ReadLine(), out enps_191current)) 
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_191currentroute;
+                            }
+                            double enps_191voltage = enps_191 / enps_191current;
+                            Console.WriteLine("Your total voltage is " + enps_191voltage + "V");
+                            Console.ReadKey();
                         }
                         if (enps_string == "2") {
                             double enps_192;
