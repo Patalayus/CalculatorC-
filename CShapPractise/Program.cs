@@ -964,15 +964,16 @@ namespace CShapPractise
                         
                         double enps_191;
                         Console.WriteLine("You have chosen to work out the wattage, current, voltage or resistance of a circuit");
+                        enps_redo:
                         Console.WriteLine("Please specify which it is:\n1. Voltage\n2. Wattage\n3.Current\n4. Resistance");
                         string enps_string = Convert.ToString(Console.ReadLine());
-                        enps_redo:
-                        if ((enps_string != "1")||(enps_string !="2")||(enps_string!="3")|enps_string!="4"|(enps_string!="5")) {
+                        if ((enps_string != "1")&&(enps_string !="2")&&(enps_string!="3")&&(enps_string!="4")&&(enps_string!="5")) {
                             Console.WriteLine("Please enter a valid input");
                             goto enps_redo;
                         }
-                        if (useranswer3 == "1") {
+                        else if (enps_string == "1") {
                             Console.WriteLine("You have chosen to work out the voltage of a circuit using wattage and current.");
+                            Console.WriteLine("Please enter your wattage");
                             //V=P/I
                             enps_191route:
                             while (!Double.TryParse(Console.ReadLine(), out enps_191))
@@ -981,15 +982,52 @@ namespace CShapPractise
                                 goto enps_191route;
                             }
                         }
-                        if (useranswer3 == "2") {
+                        if (enps_string == "2") {
+                            double enps_192;
+                            double enps_voltage2;
                             Console.WriteLine("You have chosen to work out the wattage of a circuit from the current and voltage.");
+                            Console.WriteLine("Please enter your current in amps");
                             //P=V*C
+                            enps_192route:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_192))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_192route;
+                            }
+                            Console.WriteLine("Please enter your voltage");
+                            enps_193route:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_voltage2))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_193route;
+                            }
+                            double enps_192TOT = enps_192 * enps_voltage2;
+                            Console.WriteLine("Your total is " + enps_192TOT+"V");
+                            Console.ReadKey();
                         }
-                        if (useranswer3 == "3") {
+                        double enps_193voltage;
+                        if (enps_string == "3") {
                             Console.WriteLine("You have chosen to work out the current of a circuit from voltage and wattage.");
                             //C=P/V
+                            enps_193redo:
+                            Console.WriteLine("Please declare your voltage");
+                            while (!Double.TryParse(Console.ReadLine(), out enps_193voltage))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_193redo;
+                            }
+                            double enps_193wattage;
+                            enps_193wattage01:
+                            Console.WriteLine("Please declare your wattage");
+                            while (!Double.TryParse(Console.ReadLine(), out enps_193wattage)) {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_193wattage01;
+                            }
+                            double enps_193current = enps_193wattage / enps_193voltage;
+                            Console.WriteLine("Your total is" + enps_193current + "A");
+                            Console.ReadKey();
                         }
-                        if (useranswer3 == "4")
+                        if (enps_string == "4")
                         {
                             Console.WriteLine("You have chosen to work out the resistance of a circuit.");
                             //R=P/I^2
