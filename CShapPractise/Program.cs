@@ -1035,13 +1035,33 @@ namespace CShapPractise
                                 goto enps_193wattage01;
                             }
                             double enps_193current = enps_193wattage / enps_193voltage;
-                            Console.WriteLine("Your total is" + enps_193current + "A");
+                            Console.WriteLine("Your total is " + enps_193current + "A");
                             Console.ReadKey();
                         }
                         if (enps_string == "4")
                         {
+                            double enps_194wattage;
                             Console.WriteLine("You have chosen to work out the resistance of a circuit.");
                             //R=P/I^2
+                            Console.WriteLine("Please declare your wattage (power)");
+                            enps_194route:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_194wattage))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_194route;
+                            }
+                            double enps_194current;
+                            Console.WriteLine("Please declare your current");
+                            enps_194route2:
+                            while (!Double.TryParse(Console.ReadLine(), out enps_194current))
+                            {
+                                Console.WriteLine("Please enter a valid input");
+                                goto enps_194route2;
+                            }
+                            double enps_194xCrt = enps_194current * enps_194current;
+                            double enps_194xOhm = enps_194wattage / enps_194xCrt;
+                            Console.WriteLine("Your total resistance is " + enps_194xOhm+"Ohms");
+                            Console.ReadKey();
                         }
                     }
                     else if (useranswer3 == "2")
