@@ -571,16 +571,37 @@ namespace CShapPractise
 
                         Console.WriteLine("You have chosen to work out the Young's Modulus of a material.");
                         Console.Write("Please give your force on the object in newtons: ");
-                        double enps_1 = Convert.ToInt32(Console.ReadLine());
+                        double enps_1;
+                        enps_10route1:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_1))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_10route1;
+                        }
                         ///F
                         Console.Write("\nPlease give your crossectional area of the object: ");
-                        double enps_2 = Convert.ToInt32(Console.ReadLine());
+                        double enps_2;
+                        enps_10route2:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_2))
+                        { Console.WriteLine("Please enter a valid input");
+                            goto enps_10route2;
+                        }
                         ///A
                         Console.Write("\nPlease give the extension on the object: ");
-                        double enps_3 = Convert.ToInt32(Console.ReadLine());
+                        double enps_3;
+                        enps_10route3:
+                        while (Double.TryParse(Console.ReadLine(), out enps_3))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                                goto enps_10route3; }
                         ///X
                         Console.Write("\nPlease give the initial length of the object: ");
-                        double enps_4 = Convert.ToInt32(Console.ReadLine());
+                        double enps_4;
+                        enps_10route4:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_4))
+                        { Console.WriteLine("Please enter a valid input");
+                            goto enps_10route4;
+                        }
                         ///L
                         double enps_1DIVenps_2 = enps_1 / enps_2;
                         double enps_3DIVenps_4 = enps_3 / enps_4;
@@ -599,9 +620,19 @@ namespace CShapPractise
                         // mass in grams
                         // velocity in m/s
                         Console.Write("Please state the mass of your object in grams: ");
-                        double en1ps_x = Convert.ToInt32(Console.ReadLine());
+                        double en1ps_x;
+                        enps_10route1:
+                        while (!Double.TryParse(Console.ReadLine(), out en1ps_x)) {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_10route1;
+                        }
                         Console.Write("Please confirm your velocity in m/s: ");
-                        double en2ps_x = Convert.ToInt32(Console.ReadLine());
+                        double en2ps_x;
+                        enps_10route2:
+                        while (!Double.TryParse(Console.ReadLine(), out en2ps_x))
+                        { Console.WriteLine("Please enter a valid input");
+                            goto enps_10route2;
+                        }
                         double en2ps_x62 = en2ps_x * en2ps_x;
                         double en1ps_x_05 = en1ps_x * 0.5;
                         double en1ps_x_05MULTen2ps_x62 = en1ps_x_05 * en2ps_x62;
@@ -612,9 +643,21 @@ namespace CShapPractise
                     {
                         Console.WriteLine("You have chosen to work out the power of a circuit.");
                         Console.WriteLine("Please state your voltage.");
-                        double enpsx_0 = Convert.ToInt32(Console.ReadLine());
+                        double enpsx_0;
+                        enps_11route2:
+                        while (!Double.TryParse(Console.ReadLine(), out enpsx_0))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_11route2;
+                        }
                         Console.WriteLine("Please state your current.");
-                        double enpsx_01 = Convert.ToInt32(Console.ReadLine());
+                        double enpsx_01;
+                        enps_11route3:
+                        while (!Double.TryParse(Console.ReadLine(), out enpsx_01))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_11route3;
+                        }
                         //P=VxI
                         double enpsx_0MULTenpsx_01 = enpsx_0 * enpsx_01;
                         Console.WriteLine("Your power in watts is " + enpsx_0MULTenpsx_01 + "W");
@@ -625,11 +668,29 @@ namespace CShapPractise
                         //Ep=m*g*h
                         Console.WriteLine("You have chosen to work out the change in gravitational energy of an object");
                         Console.WriteLine("Please give your mass in kilograms:");
-                        double enps_mx = Convert.ToDouble(Console.ReadLine());
+                        double enps_mx;
+                        enps_12route1:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_mx))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_12route1;
+                        }
                         Console.WriteLine("Please give your gravitational field strength (earths is 9.81) in m/s^2:");
-                        double enps_gx = Convert.ToDouble(Console.ReadLine());
+                        double enps_gx;
+                        enps_12route2:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_gx))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_12route2;
+                        }
                         Console.WriteLine("Please give your change in height in meters:");
-                        double enps_hx = Convert.ToDouble(Console.ReadLine());
+                        double enps_hx;
+                        enps_12route3:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_hx))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_12route3;
+                        }
                         //values obtained
                         double enps_mxMULTenps_gxMULTenps_hx = enps_mx * enps_gx * enps_hx;
                         Console.WriteLine("Your total is " + enps_mxMULTenps_gxMULTenps_hx + "J");
@@ -638,11 +699,23 @@ namespace CShapPractise
                     else if (useranswer3 == "13")
                     {
                         //V=fλ
+                        double enps_xf;
                         Console.WriteLine("You have chosen to work out the velocity of a wave");
                         Console.WriteLine("Please give the frequency of the wave (give answer in Hz)");
-                        double enps_xf = Convert.ToDouble(Console.ReadLine());
+                        enps_131route:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_xf))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_131route;
+                        }
                         Console.WriteLine("Please give the wavelength of the wave (give answer in m)");
-                        double enps_xλ = Convert.ToDouble(Console.ReadLine());
+                        double enps_xλ;
+                        enps_132route:
+                        while (!Double.TryParse(Console.ReadLine(), out enps_xλ))
+                        {
+                            Console.WriteLine("Please enter a valid input");
+                            goto enps_132route;
+                        }
                         double enps_xfMULTenps_xλ = enps_xf * enps_xλ;
                         //units given for each answer (velocity of wave in m/s^-1)
                         Console.WriteLine("Your total is " + enps_xfMULTenps_xλ + "m/s^-1");
